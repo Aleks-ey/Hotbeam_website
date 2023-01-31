@@ -1,0 +1,30 @@
+.footer{
+    text-align: center;
+    height: 150px;
+    margin-top: 40px;
+}
+
+.footer-ul {
+    position: relative;
+    top: 40px;
+    /* width: 100%; */
+    /* display: block; */
+    padding: 0%;
+    /* list-style: none; */
+    /* text-align: center; */
+    margin: 0%;
+}
+
+.footer-a {
+    padding: 7px;
+    /* display: block; */
+    font-size: 30px;
+    line-height: 16px;
+}
+
+.footer-span {
+    position: relative;
+    text-align: center;
+    top: 80px;
+    bottom: 0px;
+}

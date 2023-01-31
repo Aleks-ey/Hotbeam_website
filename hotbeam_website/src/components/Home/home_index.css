@@ -1,0 +1,111 @@
+video {
+    display: block;
+}
+
+.consult {
+    width: auto;
+    height: 500px;
+    background-color: rgb(140, 26, 186);
+    text-align: center;
+    font-size: x-large;
+}
+
+.consult-h1{
+    color: white;
+    position: relative;
+    top: 70px;
+    font-weight: -100;
+    font-size: 90px;
+}
+
+.consult-h2 {
+    color: palevioletred;
+    position: relative;
+    top: 100px;
+    font-size: 30px;
+}
+
+.consult-btn {
+    background-color: palevioletred;
+    position: relative;
+    top: 150px;
+    border-radius: 0%;
+}
+
+.container_img_grid_home {
+    /* min-width: 100%; */
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0px;
+}
+
+.home_img_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#home_img_grid_override .card {
+    padding: 0;
+    margin: 0;
+    border-width: 0px;
+    border-radius: 0%;
+    text-align: center;
+    justify-content: center;
+}
+
+#home_img_grid_override .card-btn {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.after_grid_img {
+    height: 600px;
+    width: 100%;
+}
+
+.mission_div {
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.mission_paragraph {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.container_review_grid {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 100px;
+}
+
+.review_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#review_grid_override .card {
+    padding: 0;
+    margin: 0;
+    border-width: 0px;
+    border-radius: 0%;
+    text-align: center;
+    justify-content: center;
+}
+
+.review_span {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 40px;
+}
+
+.instagram_feed {
+    background-color: aquamarine;
+    height: 600px;
+}

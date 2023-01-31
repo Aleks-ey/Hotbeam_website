@@ -1,0 +1,38 @@
+.intro {
+    height: 300px;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.intro_txt {
+    color: white;
+    position: relative;
+    font-size: xx-large;
+    top: 40%;
+}
+
+.container_img_grid_serv {
+    /* min-width: 100%; */
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0px;
+}
+
+.serv_img_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#serv_img_grid_override .card {
+    padding: 0px;
+    margin: 0;
+    border-width: 0px;
+    border-radius: 0%;
+    text-align: center;
+    justify-content: center;
+}
+
+.last-div {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
