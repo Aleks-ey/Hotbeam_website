@@ -9,13 +9,13 @@ const jf_URL = "https://form.jotform.com/230296804808057"
 
 const Contact_Us = () => (
     <>
-    <iframe title="your title" style={{ width:'100%', height:'505px',border:'none'}} src={jf_URL}></iframe>
+    <iframe title="your title" style={{ width:'100%', height:'90vh',border:'none'}} src={jf_URL}></iframe>
     </>
 )
 
 export default Contact_Us
 
-{/* <iframe
+/* <iframe
     id="JotFormIFrame-230296804808057"
     title="Form"
     onload="window.parent.scrollTo(0,0)"
@@ -115,4 +115,4 @@ export default Contact_Us
     } else if (window.attachEvent) {
     window.attachEvent("onmessage", handleIFrameMessage);
     }
-</script> */}
+</script> */

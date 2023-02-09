@@ -19,7 +19,7 @@ const Footer = () => (
                 </a>
             </li>
         </ul>
-        <div class="footer-span"><FontAwesomeIcon icon={faCopyright} /> 2023 by HotBeam Productions</div>
+        <div class="footer-span"><FontAwesomeIcon icon={faCopyright} /> 2023 by Hot Beam Productions LLC</div>
     </div>
     </>
 )

@@ -1,23 +1,24 @@
 import './home_index.css';
-import movie from '../../assets/web_layout.mov';
+import movie from '../../assets/HB_INTRO2.mp4';
 import Button from 'react-bootstrap/Button';
 // import Container from 'react-bootstrap/Container';
 import d1 from '../../assets/dance-1'
 import d2 from '../../assets/dance-2'
 import d3 from '../../assets/dance-3'
+import after_grid_banner from '../../assets/IMG_1529.jpeg'
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"></link>
 
 const Home = () => (
     <>
     <div align="center" class="embeded-responsive">
-        <video controls autoPlay muted loop class="embeded-responsive-item" width="100%" height="">
+        <video autoPlay muted loop class="embeded-responsive-item" width="100%" height="">
             <source src={movie} type="video/mp4"/>
         </video>
     </div>
     <div className="consult">
         <div className="consult-h1">Keep On Dancing</div>
         <div className="consult-h2">Let's Make it a Night to Remember</div>
-        <Button type="button" className="consult-btn">Free Consultation</Button>
+        <Button type="button" className="consult-btn" href='/contact'>Free Consultation</Button>
     </div>
     <div class="container_img_grid_home" id="home_img_grid_override">
         <div class="home_img_grid">
@@ -48,7 +49,7 @@ const Home = () => (
         </div>
     </div>
     <div class="after_grid_img_div">
-        <img src={d1} alt="" class="after_grid_img" />
+        <img src={after_grid_banner} alt="" class="after_grid_img" />
     </div>
     <div class="mission_div">
         <h1>Keeping You Free While The</h1>

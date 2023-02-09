@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 video {
     display: block;
 }
@@ -5,8 +8,11 @@ video {
 .consult {
     width: auto;
     height: 500px;
-    background-color: rgb(140, 26, 186);
+    background-color: #4B0082;
+    /* other colors: #DB3EB1   #4D4DFF   #0001db   #e889fb   #o9d4da   d30000   #295e62 */
     text-align: center;
+    /* font-family: 'Oswald'; */
+    font-family: 'Roboto';
     font-size: x-large;
 }
 
@@ -26,7 +32,7 @@ video {
 }
 
 .consult-btn {
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
     position: relative;
     top: 150px;
     border-radius: 0%;
@@ -61,8 +67,10 @@ video {
 }
 
 .after_grid_img {
-    height: 600px;
+    /* height: 700px; */
+    aspect-ratio: 2 / 1;
     width: 100%;
+    image-rendering: optimizeQuality;
 }
 
 .mission_div {
@@ -85,8 +93,15 @@ video {
     padding-bottom: 100px;
 }
 
-.review_grid {
+/* .review_grid {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
+
+.review_grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
 

@@ -1,12 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 .topbar {
     height: 100px;
 }
 
-.linksBox {
-    flex-direction: row;
+.brand_name {
+    font-family: 'Oswald';
+    position: relative;
+    color: white;
+    margin-right: 150px;
 }
 
-.navLink{
-    color: rgb(39, 30, 211);
+.hb {
+    width: 500px;
+    font-size: xx-large;
+}
+
+.linksBox {
+    flex-direction: row;
+    font-family: 'Oswald';
+}
+
+#links_override .navLink{
+    color: white;
     margin-right: 20px;
 }
