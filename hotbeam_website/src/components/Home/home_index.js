@@ -18,7 +18,7 @@ const Home = () => (
     <div className="consult">
         <div className="consult-h1">Keep On Dancing</div>
         <div className="consult-h2">Let's Make it a Night to Remember</div>
-        <Button type="button" className="consult-btn" href='/contact'>Free Consultation</Button>
+        <Button type="button" id="consult-btn" href='/contact'>Free Consultation</Button>
     </div>
     <div class="container_img_grid_home" id="home_img_grid_override">
         <div class="home_img_grid">

@@ -31,8 +31,9 @@ video {
     font-size: 30px;
 }
 
-.consult-btn {
-    /* background-color: palevioletred; */
+#consult-btn {
+    background-color: white;
+    color: black;
     position: relative;
     top: 150px;
     border-radius: 0%;

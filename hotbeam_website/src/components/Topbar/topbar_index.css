@@ -18,7 +18,9 @@
 
 .linksBox {
     flex-direction: row;
+    max-height: 120px;
     font-family: 'Oswald';
+    overflow:visible;
 }
 
 #links_override .navLink{
