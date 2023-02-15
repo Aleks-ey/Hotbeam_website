@@ -8,7 +8,7 @@ import Logo from '../../assets/hb_logo.png';
 const Topbar = () => (
     <>
     <Navbar bg="dark" expand="lg" sticky="top">
-        <Container className="topbar" class="container-fluid">
+        <Container className="topbar container-fluid">
             <Navbar.Brand href='/home'>
                 <img src={Logo}
                     alt=''
@@ -18,12 +18,12 @@ const Topbar = () => (
                 /> {' '}
                 
             </Navbar.Brand>
-            <div class="brand_name">
-                <div class="hb">Hot Beam Productions </div>
-                <div class="dj">DJ Services and Lighting Solutions</div>
+            <div className="brand_name">
+                <div className="hb">Hot Beam Productions </div>
+                <div className="dj">DJ Services and Lighting Solutions</div>
             </div>
             <Nav className="linksBox" id="links_override">
-                <Nav.Link className="navLink" href="/home">Home</Nav.Link>
+                <Nav.Link className="navLink" href="/">Home</Nav.Link>
                 <Nav.Link className="navLink" href="/services">Services</Nav.Link>
                 <Nav.Link className="navLink" href="/meet">Meet the DJs</Nav.Link>
                 <Nav.Link className="navLink" href="/mission">Our Mission</Nav.Link>

@@ -1,25 +1,25 @@
 import './meet_index.css'
 
-const Meet_the_DJs = () => (
+const MeetTheDJs = () => (
     <>
-    <div class="meet_intro">
+    <div className="meet_intro">
         <h1>Worry Less, Dance More</h1>
-        <div class="meet_paragraph">
+        <div className="meet_paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
     </div>
-    <div class="container_dj_grid" id="dj_grid_override">
-            <div class="dj_grid">
-                <div class="card">
-                    <img src="" alt="" class="card_img" />
-                    <span class="dj_span">
+    <div className="container_dj_grid" id="dj_grid_override">
+            <div className="dj_grid">
+                <div className="card">
+                    <img src="" alt="" className="card_img" />
+                    <span className="dj_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                     <h3>Bobby McBobster</h3>
                 </div>
-                <div class="card">
-                    <img src="" alt="" class="card_img" />
-                    <span class="dj_span">
+                <div className="card">
+                    <img src="" alt="" className="card_img" />
+                    <span className="dj_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                     <h3>Spongebob</h3><h3>Squarepants</h3>
@@ -29,4 +29,4 @@ const Meet_the_DJs = () => (
     </>
 )
 
-export default Meet_the_DJs;
+export default MeetTheDJs;

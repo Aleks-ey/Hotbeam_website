@@ -10,8 +10,8 @@ import after_grid_banner from '../../assets/IMG_1529.jpeg'
 
 const Home = () => (
     <>
-    <div align="center" class="embeded-responsive">
-        <video autoPlay muted loop class="embeded-responsive-item" width="100%" height="">
+    <div align="center" className="embeded-responsive">
+        <video autoPlay muted loop className="embeded-responsive-item" width="100%" height="">
             <source src={movie} type="video/mp4"/>
         </video>
     </div>
@@ -20,41 +20,41 @@ const Home = () => (
         <div className="consult-h2">Let's Make it a Night to Remember</div>
         <Button type="button" id="consult-btn" href='/contact'>Free Consultation</Button>
     </div>
-    <div class="container_img_grid_home" id="home_img_grid_override">
-        <div class="home_img_grid">
-            <div class="card">
-                <img src={d1} alt="" class="card_img" />
+    <div className="container_img_grid_home" id="home_img_grid_override">
+        <div className="home_img_grid">
+            <div className="card">
+                <img src={d1} alt="" className="card_img" />
             </div>
-            <div class="card">
+            <div className="card">
                 <h2>School Dances</h2>
                 <h2> & Proms</h2>
                 <Button type="button" className="card-btn" href="/services">Learn More</Button>
             </div>
-            <div class="card">
-                <img src={d2} alt="" class="card_img" />
+            <div className="card">
+                <img src={d2} alt="" className="card_img" />
             </div>
             {/* ------------------------------ */}
-            <div class="card">
+            <div className="card">
                 <h2>Weddings</h2>
                 <Button type="button" className="card-btn" href="/services">Learn More</Button>
             </div>
-            <div class="card">
-                <img src={d3} alt="" class="card_img" />
+            <div className="card">
+                <img src={d3} alt="" className="card_img" />
             </div>
-            <div class="card">
+            <div className="card">
                 <h2>Corporate</h2>
                 <h2>Events</h2>
                 <Button type="button" className="card-btn" href="/services">Learn More</Button>
             </div>
         </div>
     </div>
-    <div class="after_grid_img_div">
-        <img src={after_grid_banner} alt="" class="after_grid_img" />
+    <div className="after_grid_img_div">
+        <img src={after_grid_banner} alt="" className="after_grid_img" />
     </div>
-    <div class="mission_div">
+    <div className="mission_div">
         <h1>Keeping You Free While The</h1>
         <h1>Dance Floor is Busy</h1>
-        <div class="mission_paragraph">
+        <div className="mission_paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -63,29 +63,29 @@ const Home = () => (
         </div>
         <Button type="button" className="card-btn" href="/services">Read More</Button>
     </div>
-    <div class="review_div">
-        <div class="review_intro">
+    <div className="review_div">
+        <div className="review_intro">
 
         </div>
-        <div class="container_review_grid" id="review_grid_override">
-            <div class="review_grid">
-                <div class="card">
-                    <img src="" alt="" class="card_img" />
-                    <span class="review_span">
+        <div className="container_review_grid" id="review_grid_override">
+            <div className="review_grid">
+                <div className="card">
+                    <img src="" alt="" className="card_img" />
+                    <span className="review_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                     <h3>Bobby McBobster</h3>
                 </div>
-                <div class="card">
-                    <img src="" alt="" class="card_img" />
-                    <span class="review_span">
+                <div className="card">
+                    <img src="" alt="" className="card_img" />
+                    <span className="review_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                     <h3>Spongebob</h3><h3>Squarepants</h3>
                 </div>
-                <div class="card">
-                    <img src="" alt="" class="card_img" />
-                    <span class="review_span">
+                <div className="card">
+                    <img src="" alt="" className="card_img" />
+                    <span className="review_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                     <h3>John</h3>
@@ -93,7 +93,7 @@ const Home = () => (
             </div>
         </div>
     </div>
-    <div class="instagram_feed">
+    <div className="instagram_feed">
         instagram feed will go here
     </div>
     </>

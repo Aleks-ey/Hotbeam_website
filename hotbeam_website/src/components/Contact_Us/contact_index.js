@@ -7,13 +7,13 @@ import './contact_index.css'
 // }; // if you want to add some custom CSS
 const jf_URL = "https://form.jotform.com/230296804808057"
 
-const Contact_Us = () => (
+const ContactUs = () => (
     <>
     <iframe title="your title" style={{ width:'100%', height:'90vh',border:'none'}} src={jf_URL}></iframe>
     </>
 )
 
-export default Contact_Us
+export default ContactUs
 
 /* <iframe
     id="JotFormIFrame-230296804808057"

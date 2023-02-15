@@ -5,21 +5,21 @@ import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => (
     <>
-    <div class="footer">
-        <ul class="footer-ul">
-            <li class="footer-li">
-                <a target="_blank" rel='noreferrer' href='_blank' class="footer-a">
+    <div className="footer">
+        <ul className="footer-ul">
+            <li className="footer-li">
+                <a target="_blank" rel='noreferrer' href='_blank' className="footer-a">
                     <FontAwesomeIcon icon={faFacebook} />
                 </a>
-                <a target="_blank" rel='noreferrer' href='_blank' class="footer-a">
+                <a target="_blank" rel='noreferrer' href='_blank' className="footer-a">
                     <FontAwesomeIcon icon={faTwitter} />
                 </a>
-                <a target="_blank" rel='noreferrer' href='_blank' class="footer-a">
+                <a target="_blank" rel='noreferrer' href='_blank' className="footer-a">
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
             </li>
         </ul>
-        <div class="footer-span"><FontAwesomeIcon icon={faCopyright} /> 2023 by Hot Beam Productions LLC</div>
+        <div className="footer-span"><FontAwesomeIcon icon={faCopyright} /> 2023 by Hot Beam Productions LLC</div>
     </div>
     </>
 )

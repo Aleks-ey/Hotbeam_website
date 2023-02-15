@@ -1,33 +1,33 @@
 import './mission_index.css'
 
-const Our_Mission = () => (
+const OurMission = () => (
     <>
-    <div class="mission_intro">
+    <div className="mission_intro">
         <h1>Enjoy Your Special Day</h1>
-        <div class="mission_paragraph">
+        <div className="mission_paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
     </div>
-    <div class="container_meet_grid" id="meet_grid_override">
-            <div class="meet_grid">
-                <div class="card">
-                    <img src="" alt="" class="card_img" />
+    <div className="container_meet_grid" id="meet_grid_override">
+            <div className="meet_grid">
+                <div className="card">
+                    <img src="" alt="" className="card_img" />
                     <h3>Personality</h3>
-                    <span class="meet_span">
+                    <span className="meet_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                 </div>
-                <div class="card">
-                    <img src="" alt="" class="card_img" />
+                <div className="card">
+                    <img src="" alt="" className="card_img" />
                     <h3>Professionalism</h3>
-                    <span class="meet_span">
+                    <span className="meet_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                 </div>
-                <div class="card">
-                    <img src="" alt="" class="card_img" />
+                <div className="card">
+                    <img src="" alt="" className="card_img" />
                     <h3>Peace of Mind</h3>
-                    <span class="meet_span">
+                    <span className="meet_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                 </div>
@@ -36,4 +36,4 @@ const Our_Mission = () => (
     </>
 )
 
-export default Our_Mission;
+export default OurMission;
