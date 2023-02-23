@@ -1,0 +1,14 @@
+#feed_override .col-md-2 {
+    width: calc(100% / 3);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#feed_override img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#feed_override .row {
+    margin-bottom: 20px;
+}

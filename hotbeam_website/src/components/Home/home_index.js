@@ -1,4 +1,5 @@
 import './home_index.css';
+import React from 'react';
 import movie from '../../assets/HB_INTRO2.mp4';
 import Button from 'react-bootstrap/Button';
 // import Container from 'react-bootstrap/Container';
@@ -6,9 +7,12 @@ import d1 from '../../assets/dance-1'
 import d2 from '../../assets/dance-2'
 import d3 from '../../assets/dance-3'
 import after_grid_banner from '../../assets/IMG_1529.jpeg'
+import InstaFeeds from '../InstaFeeds/InstaFeeds';
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"></link>
 
-const Home = () => (
+const Home = () => {
+    console.log(process.env.REACT_APP_INS_TOKEN)
+    return(
     <>
     <div align="center" className="embeded-responsive">
         <video autoPlay muted loop className="embeded-responsive-item" width="100%" height="">
@@ -94,9 +98,10 @@ const Home = () => (
         </div>
     </div>
     <div className="instagram_feed">
-        instagram feed will go here
+        <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12}/>
     </div>
     </>
-)
+    )
+}
 
 export default Home;

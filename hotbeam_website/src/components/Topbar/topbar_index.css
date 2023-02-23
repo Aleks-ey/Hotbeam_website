@@ -1,19 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-.topbar {
-    height: 100px;
+/* #navbar_override {
+    padding: 0 0 0 0;
+}
+
+#navbar_override .topbar {
+    width: 100%;
+    height: 125px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.hb_logo_div {
+    max-width: 150px;
+    height: auto;
+    margin-left: 0;
+}
+
+#navbar_override .navbar-brand {
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.hb_logo {
+    position: relative;
+    width: 100%;
+    max-width: 150px;
+    max-height: 125px;
 }
 
 .brand_name {
     font-family: 'Oswald';
     position: relative;
     color: white;
-    margin-right: 150px;
+    overflow: hidden;
 }
 
 .hb {
-    width: 500px;
     font-size: xx-large;
+}
+
+.dj {
+    font-size: large;
 }
 
 .linksBox {
@@ -25,5 +56,172 @@
 
 #links_override .navLink{
     color: white;
-    margin-right: 20px;
-}
+    min-width: 70px;
+} */
+
+/* ---------------------------------------------------- */
+
+/* Topbar styles */
+
+/* #navbar_override {
+    background-color: #343a40;
+  }
+  
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hb_logo_div {
+    width: 10%;
+  }
+  
+  .hb_logo {
+    width: 100%;
+    max-width: 80px;
+  }
+  
+  .brand_name {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .dj {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  
+  .navLink {
+    color: #fff;
+  }
+  
+  .linksBox {
+    width: 50%;
+  }
+  
+  @media (max-width: 991.98px) {
+    .topbar {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .hb_logo_div {
+      width: 30%;
+    }
+    .linksBox {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .brand_name {
+      font-size: 1rem;
+    }
+    .dj {
+      font-size: 0.6rem;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .brand_name {
+      font-size: 0.8rem;
+    }
+    .dj {
+      font-size: 0.5rem;
+    }
+    .hb_logo_div {
+      width: 50%;
+    }
+  }
+   */
+
+   /* ---------------------------------------------------- */
+
+    #navbar_override {
+        max-width: 100%;
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #navbar_override .hb_logo_div {
+        display: flex;
+        align-items: center;
+        max-width: 30%;
+    }
+
+    #navbar_override .hb_logo {
+        height: 100px;
+        margin-left: 30px;
+    }
+
+    .brand_name {
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Oswald';
+        font-size: 1.5rem;
+        color: #fff;
+        margin-left: 1rem;
+    }
+
+    .dj {
+        font-size: 1rem;
+    }
+
+    .linksBox {
+        max-width: fit-content;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+
+    .navLink {
+        font-family: 'Oswald';
+        font-size: 1.2rem;
+        color: #fff;
+        margin-left: 1rem;
+    }
+
+    .hamburger {
+        margin-right: 30px;
+    }
+
+    @media (max-width: 991px) {
+        .hb_logo_div {
+            margin-right: auto;
+        }
+
+        .linksBox {
+            margin-left: auto;
+        }
+    }
+
+    @media (max-width: 390px) {
+        #navbar_override .hb_logo_div {
+            display: flex;
+            align-items: center;
+            max-width: 20%;
+        }
+
+        #navbar_override .hb_logo {
+            height: 70px;
+            margin-left: 30px;
+        }
+
+        .brand_name {
+            padding-bottom: 10px;
+            font-size: 1.25rem;
+        }
+
+        .dj {
+            font-size: 0.75rem;
+        }
+
+        
+    }
+  
