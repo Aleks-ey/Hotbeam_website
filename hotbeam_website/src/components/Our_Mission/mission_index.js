@@ -8,26 +8,26 @@ const OurMission = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
     </div>
-    <div className="container_meet_grid" id="meet_grid_override">
-            <div className="meet_grid">
+    <div className="container_mission_grid" id="mission_grid_override">
+            <div className="mission_grid">
                 <div className="card">
                     <img src="" alt="" className="card_img" />
                     <h3>Personality</h3>
-                    <span className="meet_span">
+                    <span className="mission_card_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                 </div>
                 <div className="card">
                     <img src="" alt="" className="card_img" />
                     <h3>Professionalism</h3>
-                    <span className="meet_span">
+                    <span className="mission_card_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                 </div>
                 <div className="card">
                     <img src="" alt="" className="card_img" />
                     <h3>Peace of Mind</h3>
-                    <span className="meet_span">
+                    <span className="mission_card_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                 </div>

@@ -32,7 +32,7 @@
     justify-content: center;
 }
 
-.card_img {
+.serv_card_img {
     height: 100%;
     width: 100%;
     image-rendering: optimizeQuality;
@@ -46,6 +46,18 @@
 .last-div {
     padding-top: 80px;
     padding-bottom: 60px;
+}
+
+@media (max-width: 920px) {
+    .serv_card_h {
+        font-size: 25px;
+    }
+
+    .serv_card_span {
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media (max-width: 770px) {

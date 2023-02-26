@@ -54,7 +54,7 @@ video {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card_img {
+.home_card_img {
     height: 100%;
     width: 100%;
     image-rendering: optimizeQuality;

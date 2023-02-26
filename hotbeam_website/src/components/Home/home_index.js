@@ -27,7 +27,7 @@ const Home = () => {
     <div className="container_img_grid_home" id="home_img_grid_override">
         <div className="home_img_grid">
             <div className="card home_img_card">
-                <img src={d1} alt="" className="card_img" />
+                <img src={d1} alt="" className="home_card_img" />
             </div>
             <div className="card home_card_txt">
                 <h2>School Dances</h2>
@@ -35,7 +35,7 @@ const Home = () => {
                 <Button type="button" className="card-btn" href="/services">Learn More</Button>
             </div>
             <div className="card home_img_card">
-                <img src={d2} alt="" className="card_img" />
+                <img src={d2} alt="" className="home_card_img" />
             </div>
             {/* ------------------------------ */}
             <div className="card home_card_txt">
@@ -43,7 +43,7 @@ const Home = () => {
                 <Button type="button" className="card-btn" href="/services">Learn More</Button>
             </div>
             <div className="card home_img_card">
-                <img src={d3} alt="" className="card_img" />
+                <img src={d3} alt="" className="home_card_img" />
             </div>
             <div className="card home_card_txt">
                 <h2>Corporate</h2>

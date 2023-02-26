@@ -14,7 +14,7 @@ const Services = () => (
         <div className="serv_img_grid">
 
             <div className="card">
-                <img src={d1} alt="" className="card_img" />
+                <img src={d1} alt="" className="serv_card_img" />
             </div>
             <div className="card">
                 <h2 className='serv_card_h'>School Dances</h2>
@@ -22,7 +22,7 @@ const Services = () => (
                 <span className='serv_card_span'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>
             <div className="card">
-                <img src={d2} alt="" className="card_img" />
+                <img src={d2} alt="" className="serv_card_img" />
             </div>
 
             <div className="card">
@@ -30,7 +30,7 @@ const Services = () => (
                 <span className='serv_card_span'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>
             <div className="card">
-                <img src={d3} alt="" className="card_img" />
+                <img src={d3} alt="" className="serv_card_img" />
             </div>
             <div className="card">
                 <h2 className='serv_card_h'>Corporate</h2>
@@ -39,7 +39,7 @@ const Services = () => (
             </div>
 
             <div className="card">
-                <img src={d1} alt="" className="card_img" />
+                <img src={d1} alt="" className="serv_card_img" />
             </div>
             <div className="card">
                 <h2 className='serv_card_h'>Private</h2>
@@ -47,7 +47,7 @@ const Services = () => (
                 <span className='serv_card_span'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>
             <div className="card">
-                <img src={d2} alt="" className="card__img" />
+                <img src={d2} alt="" className="serv_card__img" />
             </div>
 
             <div className="card">
@@ -56,7 +56,7 @@ const Services = () => (
                 <span className='serv_card_span'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>
             <div className="card">
-                <img src={d3} alt="" className="card_img" />
+                <img src={d3} alt="" className="serv_card_img" />
             </div>
             <div className="card">
                 <h2 className='serv_card_h'>Bar/Bat Mitzvahs</h2>
