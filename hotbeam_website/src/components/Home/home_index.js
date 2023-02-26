@@ -26,26 +26,26 @@ const Home = () => {
     </div>
     <div className="container_img_grid_home" id="home_img_grid_override">
         <div className="home_img_grid">
-            <div className="card">
+            <div className="card home_img_card">
                 <img src={d1} alt="" className="card_img" />
             </div>
-            <div className="card">
+            <div className="card home_card_txt">
                 <h2>School Dances</h2>
                 <h2> & Proms</h2>
                 <Button type="button" className="card-btn" href="/services">Learn More</Button>
             </div>
-            <div className="card">
+            <div className="card home_img_card">
                 <img src={d2} alt="" className="card_img" />
             </div>
             {/* ------------------------------ */}
-            <div className="card">
+            <div className="card home_card_txt">
                 <h2>Weddings</h2>
                 <Button type="button" className="card-btn" href="/services">Learn More</Button>
             </div>
-            <div className="card">
+            <div className="card home_img_card">
                 <img src={d3} alt="" className="card_img" />
             </div>
-            <div className="card">
+            <div className="card home_card_txt">
                 <h2>Corporate</h2>
                 <h2>Events</h2>
                 <Button type="button" className="card-btn" href="/services">Learn More</Button>
@@ -55,17 +55,17 @@ const Home = () => {
     <div className="after_grid_img_div">
         <img src={after_grid_banner} alt="" className="after_grid_img" />
     </div>
-    <div className="mission_div">
+    <div className="home_mission_div">
         <h1>Keeping You Free While The</h1>
         <h1>Dance Floor is Busy</h1>
-        <div className="mission_paragraph">
+        <div className="home_mission_paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
-        <Button type="button" className="card-btn" href="/services">Read More</Button>
+        <Button type="button" className="card-btn home_mission_btn" href="/services">Read More</Button>
     </div>
     <div className="review_div">
         <div className="review_intro">
@@ -73,26 +73,26 @@ const Home = () => {
         </div>
         <div className="container_review_grid" id="review_grid_override">
             <div className="review_grid">
-                <div className="card">
-                    <img src="" alt="" className="card_img" />
+                <div className="card review_card">
+                    <img src={d1} alt="" className="review_card_img" />
                     <span className="review_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
-                    <h3>Bobby McBobster</h3>
+                    <h3>John Doe</h3>
                 </div>
-                <div className="card">
-                    <img src="" alt="" className="card_img" />
+                <div className="card review_card">
+                    <img src={d2} alt="" className="review_card_img" />
                     <span className="review_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
-                    <h3>Spongebob</h3><h3>Squarepants</h3>
+                    <h3>Jane Doe</h3>
                 </div>
-                <div className="card">
-                    <img src="" alt="" className="card_img" />
+                <div className="card review_card">
+                    <img src={d3} alt="" className="review_card_img" />
                     <span className="review_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
-                    <h3>John</h3>
+                    <h3>John Doe 2</h3>
                 </div>
             </div>
         </div>

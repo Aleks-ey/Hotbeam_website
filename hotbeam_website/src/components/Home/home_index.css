@@ -22,6 +22,9 @@ video {
     top: 70px;
     font-weight: -100;
     font-size: 90px;
+    /* text does not wrap */
+    white-space: nowrap;
+    /* responsive font size */
 }
 
 .consult-h2 {
@@ -51,6 +54,12 @@ video {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.card_img {
+    height: 100%;
+    width: 100%;
+    image-rendering: optimizeQuality;
+}
+
 #home_img_grid_override .card {
     padding: 0;
     margin: 0;
@@ -74,18 +83,25 @@ video {
     image-rendering: optimizeQuality;
 }
 
-.mission_div {
+.home_mission_div {
     justify-content: center;
     text-align: center;
     margin-top: 120px;
     margin-bottom: 120px;
 }
 
-.mission_paragraph {
+.home_mission_paragraph {
     margin-top: 70px;
     margin-bottom: 70px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.home_mission_btn {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
 }
 
 .container_review_grid {
@@ -93,11 +109,6 @@ video {
     padding-right: 0;
     padding-bottom: 100px;
 }
-
-/* .review_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-} */
 
 .review_grid {
     display: -ms-grid;
@@ -115,13 +126,94 @@ video {
     justify-content: center;
 }
 
+.review_card_img {
+    /* circular image that sits in the middle of the div */
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .review_span {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-bottom: 40px;
 }
 
 .instagram_feed {
     background-color: aquamarine;
     height: 600px;
+}
+
+@media (max-width: 991px) {
+    .consult-h1{
+        font-size: 70px;
+    }
+    
+}
+
+@media (max-width: 770px) {
+    .consult-h1{
+        font-size: 50px;
+    }
+
+    .review_grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        /* center the grid */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* make the home_img_grid 1 column instead of 3 */
+    .home_img_grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    #home_img_grid_override .card {
+        height: 401px;
+        padding: 0;
+        margin: 0;
+        border-width: 0px;
+        border-radius: 0%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #review_grid_override .review_card{
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .consult{
+        height: 400px;
+    }
+
+    .consult-h1{
+        font-size: 40px;
+    }
+
+    .consult-h2 {
+        font-size: 20px;
+    }
+
+    #home_img_grid_override .card {
+        height: 201px;
+        padding: 0;
+        margin: 0;
+        border-width: 0px;
+        border-radius: 0%;
+        text-align: center;
+        justify-content: center;
+    }
 }
