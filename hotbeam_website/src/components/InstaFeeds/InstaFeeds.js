@@ -12,7 +12,7 @@ const InstaFeeds = ({token, limit}) => {
     const tokenProp = useRef(token);
     tokenProp.current = token;
 
-    useEffect(() => {
+    useEffect((token) => {
         // this is to avoid memory leaks
         const abortController = new AbortController();
 
