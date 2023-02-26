@@ -32,7 +32,63 @@
     justify-content: center;
 }
 
+.card_img {
+    height: 100%;
+    width: 100%;
+    image-rendering: optimizeQuality;
+}
+
+.serv_card_span {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .last-div {
     padding-top: 80px;
     padding-bottom: 60px;
+}
+
+@media (max-width: 770px) {
+    /* make the home_img_grid 1 column instead of 3 */
+    .serv_img_grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    #serv_img_grid_override .card {
+        height: 401px;
+        padding: 0;
+        margin: 0;
+        border-width: 0px;
+        border-radius: 0%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .intro_txt {
+        font-size: 30px;
+    }
+
+    #serv_img_grid_override .card {
+        height: 201px;
+        padding: 0;
+        margin: 0;
+        border-width: 0px;
+        border-radius: 0%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .serv_card_h{
+        font-size: 20px;
+    }
+
+    .serv_card_span{
+        font-size: 15px;
+    }
 }

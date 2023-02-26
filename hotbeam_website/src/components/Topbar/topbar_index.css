@@ -201,7 +201,7 @@
         }
     }
 
-    @media (max-width: 390px) {
+    @media (max-width: 420px) {
         #navbar_override .hb_logo_div {
             display: flex;
             align-items: center;
@@ -222,6 +222,33 @@
             font-size: 0.75rem;
         }
 
-        
+        .hamburger {
+          margin-right: 30px;
+          /* margin-left: 50px; */
+      }
     }
+
+    @media (max-width: 310px) {
+      #navbar_override .hb_logo {
+        height: 60px;
+        margin-left: 10px;
+    }
+
+      .hamburger {
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+  }
+
+    @media (max-width: 200px) {
+      #navbar_override .hb_logo {
+        height: 70px;
+        margin-left: 45px;
+    }
+
+      .hamburger {
+        margin-right: 30px;
+        margin-left: 50px;
+    }
+  }
   

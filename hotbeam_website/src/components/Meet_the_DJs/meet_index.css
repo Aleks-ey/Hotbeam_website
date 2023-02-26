@@ -12,11 +12,13 @@
 }
 
 .meet_paragraph {
+    /* responsive text thats centered */
     margin-top: 70px;
     margin-bottom: 70px;
-    padding-left: 300px;
-    padding-right: 300px;
-    overflow: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+
+
 }
 
 .container_dj_grid {
@@ -39,8 +41,33 @@
     justify-content: center;
 }
 
+.card_img {
+    /* circular image that sits in the middle of the div */
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .dj_span {
-    padding-left: 100px;
-    padding-right: 100px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
     margin-bottom: 40px;
+}
+
+@media (max-width: 780px) {
+    .meet_paragraph {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .dj_span {
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 40px;
+    }
 }
