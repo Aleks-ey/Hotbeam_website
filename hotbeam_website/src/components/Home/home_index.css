@@ -144,8 +144,8 @@ video {
 }
 
 .instagram_feed {
-    background-color: aquamarine;
-    height: 600px;
+    background-color: white;
+    height: 100%;
 }
 
 @media (max-width: 991px) {

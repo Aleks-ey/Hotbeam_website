@@ -98,7 +98,7 @@ const Home = () => {
         </div>
     </div>
     <div className="instagram_feed">
-        <InstaFeeds token={REACT_APP_INS_TOKEN} limit={12}/>
+        <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12}/>
     </div>
     </>
     )

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 import { Carousel } from 'react-bootstrap';
 
-// import Feed from './Feed.js'
+import Feed from './Feed.js'
 
 import './InstaFeeds.css'
 
@@ -12,7 +12,7 @@ const InstaFeeds = ({token, limit}) => {
     const tokenProp = useRef(token);
     tokenProp.current = token;
 
-    useEffect((token) => {
+    useEffect(() => {
         // this is to avoid memory leaks
         const abortController = new AbortController();
 
@@ -40,16 +40,37 @@ const InstaFeeds = ({token, limit}) => {
 
     return (
 
+        // <Carousel interval={3000} indicators={false} id="feed_override">
+        //     {feeds.map((image, index, images) => {
+        //         if (index % 6 === 0) {
+        //             const imageSet = images.slice(index, index + 6);
+        //             return (
+        //                 <Carousel.Item key={index}>
+        //                     <div className="row">
+        //                         {imageSet.map((image) => (
+        //                             <div className="col-md-2" key={image.id}>
+        //                                 <img src={image.media_url} alt={image.caption} className="img-fluid" />
+        //                             </div>
+        //                         ))}
+        //                     </div>
+        //                 </Carousel.Item>
+        //             );
+        //         }
+        //         return null;
+        //     })}
+        // </Carousel>
+
+        // Carousel that is the same as the one above but with the Feed component
         <Carousel interval={3000} indicators={false} id="feed_override">
             {feeds.map((image, index, images) => {
                 if (index % 6 === 0) {
                     const imageSet = images.slice(index, index + 6);
                     return (
                         <Carousel.Item key={index}>
-                            <div className="row">
+                            <div className="row insta_row">
                                 {imageSet.map((image) => (
-                                    <div className="col-md-2" key={image.id}>
-                                        <img src={image.media_url} alt={image.caption} className="img-fluid" />
+                                    <div className="col-md-2 insta_col" key={image.id}>
+                                        <Feed feed={image} />
                                     </div>
                                 ))}
                             </div>
@@ -59,6 +80,7 @@ const InstaFeeds = ({token, limit}) => {
                 return null;
             })}
         </Carousel>
+        
     );
 }
 

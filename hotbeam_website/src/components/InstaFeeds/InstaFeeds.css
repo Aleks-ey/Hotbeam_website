@@ -1,7 +1,17 @@
-#feed_override .col-md-2 {
-    width: calc(100% / 3);
-    padding: 10px;
+#feed_override .insta_col {
+    width: 100%;
+    aspect-ratio: 4/5;
+    /* padding: 10px; */
     box-sizing: border-box;
+    padding: 2px;
+}
+
+#feed_override .insta_row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
 }
 
 #feed_override img {
@@ -9,6 +19,7 @@
     object-fit: cover;
 }
 
-#feed_override .row {
-    margin-bottom: 20px;
+#feed_override video {
+    height: 100%;
+    object-fit: cover;
 }
