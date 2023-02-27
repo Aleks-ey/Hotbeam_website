@@ -12,21 +12,21 @@ const OurMission = () => (
             <div className="mission_grid">
                 <div className="card">
                     <img src="" alt="" className="card_img" />
-                    <h3>Personality</h3>
+                    <h3 className='mission_h'>Personality</h3>
                     <span className="mission_card_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                 </div>
                 <div className="card">
                     <img src="" alt="" className="card_img" />
-                    <h3>Professionalism</h3>
+                    <h3 className='mission_h'>Professionalism</h3>
                     <span className="mission_card_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
                 </div>
                 <div className="card">
                     <img src="" alt="" className="card_img" />
-                    <h3>Peace of Mind</h3>
+                    <h3 className='mission_h'>Peace of Mind</h3>
                     <span className="mission_card_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>

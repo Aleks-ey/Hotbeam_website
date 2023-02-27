@@ -1,4 +1,5 @@
 .mission_intro {
+    color: white;
     /* height: 500px; */
     justify-content: center;
     text-align: center;
@@ -26,6 +27,7 @@
 }
 
 #mission_grid_override .card {
+    background-color: rgb(33,37,41);
     padding: 0;
     margin: 0;
     border-width: 0px;
@@ -34,7 +36,12 @@
     justify-content: center;
 }
 
+.mission_h {
+    color: white;
+}
+
 .mission_card_span {
+    color: white;
     padding-left: 50px;
     padding-right: 50px;
     margin-top: 40px;

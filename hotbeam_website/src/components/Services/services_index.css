@@ -24,6 +24,7 @@
 }
 
 #serv_img_grid_override .card {
+    background-color: rgb(33,37,41);
     padding: 0px;
     margin: 0;
     border-width: 0px;
@@ -38,7 +39,12 @@
     image-rendering: optimizeQuality;
 }
 
+.serv_card_h{
+    color: white;
+}
+
 .serv_card_span {
+    color: white;
     padding-left: 50px;
     padding-right: 50px;
 }

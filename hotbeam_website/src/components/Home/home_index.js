@@ -15,7 +15,7 @@ const Home = () => {
     return(
     <>
     <div align="center" className="embeded-responsive">
-        <video autoPlay muted loop className="embeded-responsive-item" width="100%" height="">
+        <video autoPlay muted loop playsInline className="embeded-responsive-item" width="100%" height="">
             <source src={movie} type="video/mp4"/>
         </video>
     </div>
@@ -65,7 +65,7 @@ const Home = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
-        <Button type="button" className="card-btn home_mission_btn" href="/services">Read More</Button>
+        <Button type="button" className="card-btn" id="home_mission_btn" href="/services">Read More</Button>
     </div>
     <div className="review_div">
         <div className="review_intro">

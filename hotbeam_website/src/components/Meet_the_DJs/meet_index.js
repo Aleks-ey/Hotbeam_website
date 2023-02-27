@@ -15,14 +15,14 @@ const MeetTheDJs = () => (
                     <span className="dj_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
-                    <h3>Daniel Mankin</h3>
+                    <h3 className='dm'>Daniel Mankin</h3>
                 </div>
                 <div className="card">
                     <img src="" alt="" className="card_img" />
                     <span className="dj_span">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
-                    <h3>Beau </h3>
+                    <h3 className='bd'>Beau Davis</h3>
                 </div>
             </div>
         </div>

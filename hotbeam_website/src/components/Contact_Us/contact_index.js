@@ -9,7 +9,7 @@ const jf_URL = "https://form.jotform.com/230296804808057"
 
 const ContactUs = () => (
     <>
-    <iframe title="your title" style={{ width:'100%', height:'90vh',border:'none'}} src={jf_URL}></iframe>
+    <iframe title="your title" style={{ width:'100%', height:'90vh',border:'none'}} src={jf_URL} id="jotform"></iframe>
     </>
 )
 

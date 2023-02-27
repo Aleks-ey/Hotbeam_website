@@ -23,7 +23,7 @@ function Topbar() {
         </div>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className="hamburger"/>
         <Navbar.Collapse id="responsive-navbar-nav" className="linksBox">
-          <Nav className="me-auto">
+          <Nav className="mr-auto">
             <Nav.Link as={Link} to="/" className="navLink">
               Home
             </Nav.Link>
