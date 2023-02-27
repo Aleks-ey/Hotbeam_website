@@ -54,6 +54,16 @@
     padding-bottom: 60px;
 }
 
+#last-btn-override .last-btn {
+    background-color: white;
+    color: black;
+    border-color: white;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
 @media (max-width: 920px) {
     .serv_card_h {
         font-size: 25px;
