@@ -11,7 +11,7 @@ const Feed = (props) => {
                     width='100%'
                     height='auto' 
                     src={media_url} 
-                    type="video/mp4" 
+                    type="video/mp4/webm" 
                     controls 
                     playsInline>
                 </video>
