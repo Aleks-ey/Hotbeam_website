@@ -80,7 +80,6 @@ const InstaFeeds = ({token, limit}) => {
                 return null;
             })}
         </Carousel>
-        
     );
 }
 
