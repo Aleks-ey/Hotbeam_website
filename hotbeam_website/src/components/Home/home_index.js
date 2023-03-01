@@ -31,8 +31,12 @@ const Home = () => {
     <>
     <div align="center" className="embeded-responsive">
         <video autoPlay muted loop playsInline className="embeded-responsive-item" width="100%" height="" background-color='white'>
-            <source src={movie} type="video/mp4"/>
-            <source src={movie} type="video/webm"/>
+            {/* <source src={movie} type="video/mp4"/>
+            <source src={movie} type="video/webm"/> */}
+
+            {/* javascript to make video play on mobile with react */}
+            <source src={movie} type="video/mp4" autoPlay muted loop playsInline ref={videoRef} />
+            <source src={movie} type="video/webm" autoPlay muted loop playsInline ref={videoRef} />
         </video>
     </div>
     <div className="consult">
