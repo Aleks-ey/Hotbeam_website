@@ -13,7 +13,8 @@ const Feed = (props) => {
                     src={media_url} 
                     type="video/mp4/webm" 
                     controls 
-                    playsInline>
+                    playsInline
+                    backgroun-color='white'>
                 </video>
             )
             break;
