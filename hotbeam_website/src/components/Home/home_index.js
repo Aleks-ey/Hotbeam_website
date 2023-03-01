@@ -12,10 +12,20 @@ import InstaFeeds from '../InstaFeeds/InstaFeeds';
 
 const Home = () => {
     // javascript to make video play on mobile with react
+    // const [play, setPlay] = useState(false);
+    // useEffect(() => {
+    //     setPlay(true);
+    // }, []);
+
+    // javascript to make video play on mobile with react syncrounously
     const [play, setPlay] = useState(false);
+    const videoRef = useRef(null);
     useEffect(() => {
-        setPlay(true);
-    }, []);
+        if (videoRef.current) {
+            videoRef.current.play();
+            setPlay(true);
+        }
+    }, [videoRef]);
 
     return(
     <>
