@@ -4,6 +4,7 @@
     /* padding: 10px; */
     box-sizing: border-box;
     padding: 2px;
+    
 }
 
 #feed_override .insta_row {
@@ -12,14 +13,18 @@
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 #feed_override img {
     height: 100%;
     object-fit: cover;
+    border-radius: 5%;
 }
 
 #feed_override video {
     height: 100%;
     object-fit: cover;
+    border-radius: 5%;
 }

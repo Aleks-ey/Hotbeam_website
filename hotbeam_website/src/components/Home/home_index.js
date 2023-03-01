@@ -1,5 +1,5 @@
 import './home_index.css';
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import movie from '../../assets/HB_INTRO2.mp4';
 import Button from 'react-bootstrap/Button';
 // import Container from 'react-bootstrap/Container';
@@ -11,7 +11,12 @@ import InstaFeeds from '../InstaFeeds/InstaFeeds';
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"></link>
 
 const Home = () => {
-    console.log(process.env.REACT_APP_INS_TOKEN)
+    // javascript to make video play on mobile with react
+    const [play, setPlay] = useState(false);
+    useEffect(() => {
+        setPlay(true);
+    }, []);
+
     return(
     <>
     <div align="center" className="embeded-responsive">
