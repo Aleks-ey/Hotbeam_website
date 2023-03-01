@@ -30,14 +30,18 @@ const Home = () => {
     return(
     <>
     <div align="center" className="embeded-responsive">
-        <video autoPlay={true} 
-            muted={true} 
-            loop={true} 
-            playsInline={true} 
-            className="embeded-responsive-item" width="100%" height="" background-color='white'>
-            <source src={movie} type="video/mp4"/>
-            <source src={movie} type="video/webm"/>
-        </video>
+        <div 
+            dangerouslySetInnerHTML={{
+                __html: `
+                <video autoPlay={true} 
+                    muted={true} 
+                    loop={true} 
+                    playsInline={true} 
+                    className="embeded-responsive-item" width="100%" height="" background-color='white'>
+                    <source src={movie} type="video/mp4"/>
+                </video>'`
+            }} 
+        />
     </div>
     <div className="consult">
         <div className="consult-h1">Keep On Dancing</div>
