@@ -38,7 +38,7 @@ const Home = () => {
                     loop={true} 
                     playsInline={true} 
                     className="embeded-responsive-item" width="100%" height="" background-color='white'>
-                    <source src={movie} type="video/mp4"/>
+                    <source src="../../assets/HB_INTRO2.mp4" type="video/mp4"/>
                 </video>'`
             }} 
         />
