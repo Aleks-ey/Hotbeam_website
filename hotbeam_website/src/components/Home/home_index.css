@@ -1,45 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+/* possible colors: #4B0082 #DB3EB1   #4D4DFF   #0001db   #e889fb   #o9d4da   d30000   #295e62 */
+
+/* video and overlay text that should be directly below topbar */
+/* ----------------------------------------------------------------------------------------------- */
+.home_video_div {
+    position: relative;
+    display: block;
+}
+
 video {
     display: block;
 }
 
+.home_gif_div {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.gif {
+    display: block;
+    width: 100%;
+}
+
 .consult {
+    position: absolute;
     width: auto;
-    height: 500px;
-    background-color: #4B0082;
-    /* other colors: #DB3EB1   #4D4DFF   #0001db   #e889fb   #o9d4da   d30000   #295e62 */
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    /* font-family: 'Oswald'; */
     font-family: 'Roboto';
-    font-size: x-large;
 } 
 
-.consult-h1{
+.consult_h1{
     color: white;
     position: relative;
-    top: 70px;
     font-weight: -100;
     font-size: 90px;
-    /* text does not wrap */
     white-space: nowrap;
 }
 
-.consult-h2 {
+.consult_h2 {
     color: palevioletred;
     position: relative;
-    top: 100px;
+    margin-top: 30px;
     font-size: 30px;
 }
 
-#consult-btn {
+#consult_btn {
     background-color: white;
     color: black;
     position: relative;
-    top: 150px;
+    margin-top: 50px;
 }
+/* ----------------------------------------------------------------------------------------------- */
 
+/* Grid that holds cards that consist of images and buttons that should be directly below video */
+/* ----------------------------------------------------------------------------------------------- */
 .container_img_grid_home {
     /* min-width: 100%; */
     padding-left: 0;
@@ -55,19 +75,32 @@ video {
 .home_card_img {
     height: 100%;
     width: 100%;
+    /* aspect-ratio: 1 / 1; */
     image-rendering: optimizeQuality;
+    object-fit: cover;
 }
 
 #home_img_grid_override .card {
     color: white;
-    background-color: rgb(33,37,41);
-    /* background-color: white; */
+    /* background-color: rgb(33,37,41); */
+    background: transparent;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
     padding: 0;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 50px; */
     border-width: 0px;
     border-radius: 0%;
     text-align: center;
     justify-content: center;
+    z-index: 0;
+}
+
+.home_card_txt2 {
+    z-index: 1;
+    position: absolute;
 }
 
 #home_img_grid_override .card-btn {
@@ -80,6 +113,66 @@ video {
     width: 200px;
 }
 
+
+.slider {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    width: 80%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+
+    overflow: scroll;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    border-radius: 1%;
+}
+
+.slides::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+    height: 12px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    height: fit-content;
+    width: 100%;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+/* ----------------------------------------------------------------------------------------------- */
+
 .after_grid_img {
     /* height: 700px; */
     aspect-ratio: 2 / 1;
@@ -87,11 +180,12 @@ video {
     image-rendering: optimizeQuality;
 }
 
+/* mission statement and button that should be below the standalone image after the image grid */
+/* ----------------------------------------------------------------------------------------------- */
 .home_mission_div {
     color: white;
-    /* background-color: white; */
-    background-color: rgb(33,37,41);
-    /* background-color: #4B0082; */
+    /* background-color: rgb(33,37,41); */
+    background: transparent;
     justify-content: center;
     text-align: center;
     padding-top: 120px;
@@ -113,7 +207,10 @@ video {
     margin-right: auto;
     width: 200px;
 }
+/* ----------------------------------------------------------------------------------------------- */
 
+/* Grid that holds cards that contain profile images and reviews pulled from google that is below mission statement */
+/* ----------------------------------------------------------------------------------------------- */
 .container_review_grid {
     padding-left: 0;
     padding-right: 0;
@@ -129,8 +226,8 @@ video {
 
 #review_grid_override .card {
     color: white;
-    background-color: rgb(33,37,41);
-    /* background-color: white; */
+    /* background-color: rgb(33,37,41); */
+    background: transparent;
     padding: 0;
     margin: 0;
     border-width: 0px;
@@ -155,22 +252,31 @@ video {
     padding-right: 50px;
     margin-bottom: 40px;
 }
+/* ----------------------------------------------------------------------------------------------- */
 
 .instagram_feed {
-    /* background-color: white; */
     height: 100%;
 }
 
+/* ----------------------------------------------------------------------------------------------- */
 @media (max-width: 991px) {
-    .consult-h1{
+    .consult_h1{
+        font-size: 80px;
+    }
+
+    /* #home_img_grid_override .card {
+        height: 300px;
+    } */
+    
+}
+/* ----------------------------------------------------------------------------------------------- */
+@media (max-width: 770px) {
+    .consult_h1{
         font-size: 70px;
     }
     
-}
-
-@media (max-width: 770px) {
-    .consult-h1{
-        font-size: 50px;
+    .consult_h2 {
+        font-size: 25px;
     }
 
     .review_grid {
@@ -193,40 +299,67 @@ video {
 
     #home_img_grid_override .card {
         height: 401px;
-        padding: 0;
-        margin: 0;
-        border-width: 0px;
-        border-radius: 0%;
-        text-align: center;
-        justify-content: center;
     }
 
     #review_grid_override .review_card{
         margin-bottom: 40px;
     }
-    
 }
-
-@media (max-width: 500px) {
-    .consult{
-        height: 400px;
+/* ----------------------------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+    .consult_h1{
+        font-size: 50px;
+        margin-top: 25px;
     }
 
-    .consult-h1{
-        font-size: 40px;
-    }
-
-    .consult-h2 {
+    .consult_h2 {
         font-size: 20px;
+        margin-top: 20px;
+    }
+
+    #consult_btn {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+}
+/* ----------------------------------------------------------------------------------------------- */
+@media (max-width: 500px) {
+    .consult_h1{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .consult_h2 {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    #consult_btn {
+        font-size: 13px;
+        width: 130px;
     }
 
     #home_img_grid_override .card {
         height: 201px;
-        padding: 0;
-        margin: 0;
-        border-width: 0px;
-        border-radius: 0%;
-        text-align: center;
-        justify-content: center;
+    }
+}
+/* ----------------------------------------------------------------------------------------------- */
+@media (max-width: 350px) {
+    .consult_h1{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .consult_h2 {
+        font-size: 13px;
+        white-space: nowrap;
+        margin-top: 15px;
+    }
+
+    #consult_btn {
+        font-size: 11px;
+        margin-top: 20px;
+        width: 115px;
     }
 }

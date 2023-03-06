@@ -1,7 +1,3 @@
-/* .meet_intro {
-    height: 500px;
-    background-color: aqua;
-} */
 
 .meet_intro {
     /* height: 500px; */
@@ -10,6 +6,7 @@
     text-align: center;
     margin-top: 120px;
     margin-bottom: 120px;
+    background: transparent;
 }
 
 .meet_paragraph {
@@ -18,14 +15,15 @@
     margin-bottom: 70px;
     padding-left: 50px;
     padding-right: 50px;
-
-
 }
 
 .container_dj_grid {
     padding-left: 0;
     padding-right: 0;
     /* padding-bottom: 100px; */
+
+    /*transparent background*/
+    background: transparent;
 }
 
 .dj_grid {
@@ -34,24 +32,27 @@
 }
 
 #dj_grid_override .card {
-    background-color: rgb(33,37,41);
+    /* background-color: rgb(33,37,41); */
     padding: 0;
     margin: 0;
     border-width: 0px;
     border-radius: 0%;
     text-align: center;
     justify-content: center;
+    background: transparent;
 }
 
-.card_img {
+.dj_card_img {
     /* circular image that sits in the middle of the div */
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
+    object-fit: cover;
+
 }
 
 .dj_span {

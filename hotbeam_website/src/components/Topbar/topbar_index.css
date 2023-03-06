@@ -1,87 +1,128 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 #navbar_override {
-    max-width: 100%;
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+  max-width: 100%;
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #navbar_override .hb_logo_div {
-    display: flex;
-    align-items: center;
-    max-width: 30%;
+  display: flex;
+  align-items: center;
+  max-width: 30%;
+  margin-left: 30px;
 }
 
 #navbar_override .hb_logo {
-    height: 100px;
-    margin-left: 30px;
+  height: 100px;
 }
 
 .brand_name {
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Oswald';
-    font-size: 1.5rem;
-    color: #fff;
-    margin-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Oswald';
+  font-size: 1.5rem;
+  color: #fff;
+  margin-left: 1rem;
 }
 
 .dj {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .linksBox {
-    max-width: fit-content;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
+  max-width: fit-content;
+  max-width: -moz-fit-content;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
 }
 
 .navLink {
-    font-family: 'Oswald';
-    font-size: 1.2rem;
-    color: #fff;
-    margin-left: 1rem;
+  font-family: 'Oswald';
+  font-size: 1.2rem;
+  color: #fff;
+  margin-left: 1rem;
 }
 
 .hamburger {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
-@media (max-width: 991px) {
-    .hb_logo_div {
-        margin-right: auto;
-    }
+/* ----------------------------------------------------------------------------------------------- */
+@media (min-width: 930px) {
+  .navbar-expand-custom {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
 
-    .linksBox {
-        margin-left: auto;
-    }
+  .navbar-expand-custom .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-custom .dropdown-menu {
+    position: absolute;
+    flex-direction: row;
+  }
+
+  .navbar-expand-custom .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+  
+  .navbar-expand-custom > .container {
+    flex-wrap: nowrap;
+  }
+
+  .navbar-expand-custom .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+  }
+  
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
 }
+/* ----------------------------------------------------------------------------------------------- */
+@media (max-width: 595px) {
+  .navbar-expand-custom .navbar-nav {
+    flex-direction: row;
+    padding-left: 20px;
+  }
 
-@media (max-width: 420px) {
+  .linksBox {
+    max-width: none;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+  }
+}
+/* ----------------------------------------------------------------------------------------------- */
+@media (max-width: 500px) {
   #navbar_override .hb_logo_div {
-      display: flex;
-      align-items: center;
-      max-width: 20%;
+    margin-left: 15px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 20%;
   }
 
   #navbar_override .hb_logo {
-      height: 70px;
-      margin-left: 30px;
+    height: 70px;
   }
 
   .brand_name {
-      padding-bottom: 10px;
-      font-size: 1.25rem;
+    margin-left: 0px;
+    padding-bottom: 10px;
+    font-size: 1.25rem;
   }
 
   .dj {
-      font-size: 0.75rem;
+    font-size: 0.75rem;
   }
 
   .hamburger {
@@ -89,23 +130,30 @@
     /* margin-left: 50px; */
   }
 }
-
-@media (max-width: 310px) {
+/* ----------------------------------------------------------------------------------------------- */
+@media (max-width: 363px) {
   #navbar_override .hb_logo {
     height: 60px;
-    margin-left: 10px;
+  }
+
+  .brand_name {
+    padding-bottom: 10px;
+    font-size: 1.25rem;
   }
 
   .hamburger {
     margin-right: 30px;
     margin-left: 20px;
   }
-}
 
+  .linksBox {
+    font-size: 10px;
+  }
+}
+/* ----------------------------------------------------------------------------------------------- */
 @media (max-width: 200px) {
   #navbar_override .hb_logo {
     height: 70px;
-    margin-left: 45px;
   }
 
   .hamburger {

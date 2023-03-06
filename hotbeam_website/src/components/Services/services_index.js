@@ -2,8 +2,14 @@ import './services_index.css';
 import Button from 'react-bootstrap/Button';
 // import Container from 'react-bootstrap/Container';
 import d1 from '../../assets/dance-1'
-import d2 from '../../assets/dance-2'
-import d3 from '../../assets/dance-3'
+// import d2 from '../../assets/dance-2'
+// import d3 from '../../assets/dance-3'
+// import img1 from '../../assets/serv_img_1.png'
+import img2 from '../../assets/serv_img_2.png'
+import img3 from '../../assets/serv_img_3.jpeg'
+import img4 from '../../assets/serv_img_4.jpeg'
+import img5 from '../../assets/serv_img_5.jpeg'
+import img6 from '../../assets/serv_img_6.jpeg'
 
 const Services = () => (
     <>
@@ -22,7 +28,7 @@ const Services = () => (
                 <span className='serv_card_span'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>
             <div className="card">
-                <img src={d2} alt="" className="serv_card_img" />
+                <img src={img2} alt="" className="serv_card_img" />
             </div>
 
             <div className="card">
@@ -30,7 +36,7 @@ const Services = () => (
                 <span className='serv_card_span'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>
             <div className="card">
-                <img src={d3} alt="" className="serv_card_img" />
+                <img src={img3} alt="" className="serv_card_img" />
             </div>
             <div className="card">
                 <h2 className='serv_card_h'>Corporate</h2>
@@ -39,7 +45,7 @@ const Services = () => (
             </div>
 
             <div className="card">
-                <img src={d1} alt="" className="serv_card_img" />
+                <img src={img4} alt="" className="serv_card_img" />
             </div>
             <div className="card">
                 <h2 className='serv_card_h'>Private</h2>
@@ -47,7 +53,7 @@ const Services = () => (
                 <span className='serv_card_span'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>
             <div className="card">
-                <img src={d2} alt="" className="serv_card__img" />
+                <img src={img5} alt="" className="serv_card_img" />
             </div>
 
             <div className="card">
@@ -56,7 +62,7 @@ const Services = () => (
                 <span className='serv_card_span'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>
             <div className="card">
-                <img src={d3} alt="" className="serv_card_img" />
+                <img src={img6} alt="" className="serv_card_img" />
             </div>
             <div className="card">
                 <h2 className='serv_card_h'>Bar/Bat Mitzvahs</h2>

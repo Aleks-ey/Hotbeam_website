@@ -14,7 +14,7 @@ const Footer = () => (
                 <a target="_blank" rel='noreferrer' href='_blank' className="footer-a">
                     <FontAwesomeIcon icon={faTwitter} />
                 </a>
-                <a target="_blank" rel='noreferrer' href='_blank' className="footer-a">
+                <a target="https://www.instagram.com/hotbeamproductions/" rel='noreferrer' href='_blank' className="footer-a">
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
             </li>

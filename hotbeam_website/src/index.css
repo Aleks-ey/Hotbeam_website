@@ -6,6 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(33,37,41) !important;
+  background-image: linear-gradient(rgb(33,37,41) 15%, #4B0082);
+  background-size: 100% 125%;
+  background-attachment: fixed;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 code {

@@ -1,7 +1,11 @@
 .intro {
     height: 300px;
     text-align: center;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    background-color: rgb(33,37,41);
+    /* background: linear-gradient(rgb(33,37,41) 60%, #4B0082) 10%; */
+    /* background-color: #4B0082; */
+    /* background: transparent; */
 }
 
 .intro_txt {
@@ -16,7 +20,37 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0px;
+    /* background: linear-gradient(rgb(33,37,41), #4B0082); */
+
+    /* background: linear-gradient(#4B0082 50%, rgb(33,37,41));
+    background-size: 100% 100%;
+    animation: gradi 15s ease infinite;
+    background-attachment: fixed; */
+
+    /* border-width: 1px 0px 1px 0px;
+    border-color: black;
+    border-style: solid; */
+
+    background: transparent;
 }
+
+/* @keyframes gradi {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    75% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+} */
 
 .serv_img_grid {
     display: grid;
@@ -24,7 +58,8 @@
 }
 
 #serv_img_grid_override .card {
-    background-color: rgb(33,37,41);
+    /* background-color: rgb(33,37,41); */
+    background: transparent;
     padding: 0px;
     margin: 0;
     border-width: 0px;
@@ -37,6 +72,7 @@
     height: 100%;
     width: 100%;
     image-rendering: optimizeQuality;
+    object-fit: cover;
 }
 
 .serv_card_h{
@@ -52,6 +88,16 @@
 .last-div {
     padding-top: 80px;
     padding-bottom: 60px;
+    /* background: linear-gradient(rgb(40,37,48), #4B0082 70%); */
+    /* background-color: #4B0082;
+    box-shadow: 0 0 100vmax 100vmax #4B0082; */
+
+    /* background-color: rgb(33,37,41);
+    box-shadow: 0vmax 0vmax 100vmax 100vmax rgb(33 37 41); */
+
+    /* clip-path: inset(0vmax 0vmax -100vmax 0vmax); */
+
+    background: transparent;
 }
 
 #last-btn-override .last-btn {
@@ -64,7 +110,7 @@
     width: 200px;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1015px) {
     .serv_card_h {
         font-size: 25px;
     }
@@ -73,6 +119,16 @@
         font-size: 15px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .serv_card_h {
+        font-size: 20px;
+    }
+
+    .serv_card_span {
+        font-size: 10px;
     }
 }
 
@@ -93,6 +149,14 @@
         border-radius: 0%;
         text-align: center;
         justify-content: center;
+    }
+
+    .serv_card_h {
+        font-size: 30px;
+    }
+
+    .serv_card_span {
+        font-size: 20px;
     }
     
 }

@@ -12,7 +12,7 @@ function Topbar() {
   };
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top" expanded={expanded} onToggle={handleToggle}>
+    <Navbar bg="dark" variant="dark" expand="custom" sticky="top" expanded={expanded} onToggle={handleToggle}>
       <Container className="topbar container-fluid" id='navbar_override'>
         <Navbar.Brand as={Link} to="/" className='hb_logo_div'>
           <img src={Logo} className="hb_logo img-responsive" alt="" />
