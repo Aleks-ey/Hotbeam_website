@@ -76,10 +76,28 @@
         padding-right: 30px;
     }
 
+    .dj_card_img {
+        /* circular image that sits in the middle of the div */
+        height: 200px;
+        width: 200px;
+    }
+
     .dj_span {
         font-size: 15px;
         padding-left: 10px;
         padding-right: 10px;
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 515px) {
+    .dj_card_img {
+        /* circular image that sits in the middle of the div */
+        height: 150px;
+        width: 150px;
+    }
+
+    .dj_span {
+        font-size: 12.5px;
     }
 }
