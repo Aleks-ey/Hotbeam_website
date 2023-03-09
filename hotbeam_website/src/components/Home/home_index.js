@@ -8,9 +8,10 @@ import gif from '../../assets/HB_INTRO.gif';
 import Button from 'react-bootstrap/Button';
 import img1 from '../../assets/serv_img_1.png'
 import img2 from '../../assets/serv_img_2.png'
-import img3 from '../../assets/serv_img_3.jpeg'
+import img3 from '../../assets/serv_img_3v2.jpeg'
 import img4 from '../../assets/serv_img_4.jpeg'
-// import img5 from '../../assets/serv_img_5.jpeg'
+import img5 from '../../assets/serv_img_5.jpeg'
+import img6 from '../../assets/serv_img_6.jpeg'
 import after_grid_banner from '../../assets/IMG_1529.jpeg'
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"></link>
@@ -55,30 +56,38 @@ const Home = () => {
     )}
     {/* ----------------------------------------------------------------------------------------------- */}
 
+    <div className='home_serv_intro'>
+        <h1>Services</h1>
+    </div>
+
     {/* ------------ Grid that holds cards that consist of images and buttons that should be directly below video ------------ */}
-    {/* <div class="slider">
+    <div className="slider">
         <div className="slides">
-            <div id="slide-1">
-                    <img src={img1} alt="" className="home_card_img" />
-                    <div className="home_card_txt2">
-                        <h2>School Dances</h2>
-                        <h2> & Proms</h2>
-                    </div>
+            <h1></h1>
+            <div className="slide">
+                <img src={img2} alt="" className="slider_img" />
+                <div className="home_card_txt2" />
             </div>
-            <div id="slide-2">
-                2
+            <div className="slide">
+                <img src={img3} alt="" className="slider_img" />
+                <div className="home_card_txt2" />
             </div>
-            <div id="slide-3">
-                3
+            <div className="slide">
+                <img src={img4} alt="" className="slider_img" />
+                <div className="home_card_txt2" />
             </div>
-            <div id="slide-4">
-                4
+            <div className="slide">
+                <img src={img5} alt="" className="slider_img" />
+                <div className="home_card_txt2" />
             </div>
-            <div id="slide-5">
-                5
+            <div className="slide">
+                <img src={img6} alt="" className="slider_img" />
+                <div className="home_card_txt2" />
             </div>
         </div>
-    </div> */}
+    </div>
+
+
     <div className="container_img_grid_home" id="home_img_grid_override">
         <div className="home_img_grid">
             <div className="card home_img_card">

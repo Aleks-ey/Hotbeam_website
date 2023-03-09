@@ -58,6 +58,15 @@ video {
 }
 /* ----------------------------------------------------------------------------------------------- */
 
+.home_serv_intro {
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    margin-top: 50px;
+}
+
 /* Grid that holds cards that consist of images and buttons that should be directly below video */
 /* ----------------------------------------------------------------------------------------------- */
 .container_img_grid_home {
@@ -85,8 +94,7 @@ video {
     /* background-color: rgb(33,37,41); */
     background: transparent;
     width: 100%;
-    height: auto;
-    min-height: 300px;
+    height: 401px;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
@@ -113,37 +121,57 @@ video {
     width: 200px;
 }
 
+.home_serv_intro {
+    display: none;
+}
 
 .slider {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
-    width: 80%;
-    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 90%;
+    /* text-align: center; */
     overflow: hidden;
+    display: none;
 }
 
 .slides {
     display: flex;
 
-    overflow: scroll;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
 
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 
-    border-radius: 1%;
+    border-radius: 10%;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+
+    /* height: 100%; */
+}
+
+/* #slide {
+    width: 100%;
+    height: 100%;
+    background: transparent
+} */
+
+.slider_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .slides::-webkit-scrollbar {
     display: block;
     width: 10px;
-    height: 12px;
+    height: 10px;
 }
 
 .slides::-webkit-scrollbar-thumb {
-    background: black;
+    background: white;
     border-radius: 10px;
 }
 
@@ -158,10 +186,10 @@ video {
 .slides > div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    height: fit-content;
     width: 100%;
+
     background: #eee;
-    transform-origin: center center;
+    /* transform-origin: center center; */
     transform: scale(1);
     transition: transform 0.5s;
     position: relative;
@@ -185,7 +213,7 @@ video {
 .home_mission_div {
     color: white;
     /* background-color: rgb(33,37,41); */
-    background: transparent;
+    /* background: transparent; */
     justify-content: center;
     text-align: center;
     padding-top: 120px;
