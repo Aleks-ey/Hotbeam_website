@@ -3,6 +3,10 @@
 
 /* possible colors: #4B0082 #DB3EB1   #4D4DFF   #0001db   #e889fb   #o9d4da   d30000   #295e62 */
 
+.home {
+    background-color: white;
+}
+
 /* video and overlay text that should be directly below topbar */
 /* ----------------------------------------------------------------------------------------------- */
 .home_video_div {
@@ -23,19 +27,21 @@ video {
 .gif {
     display: block;
     width: 100%;
+    opacity: 100%;
+    /* filter: blur(5px); */
 }
 
 .consult {
     position: absolute;
     width: auto;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     font-family: 'Roboto';
 } 
 
-.consult_h1{
+.consult_h1 > h1{
     color: white;
     position: relative;
     font-weight: -100;
@@ -43,28 +49,208 @@ video {
     white-space: nowrap;
 }
 
-.consult_h2 {
-    color: palevioletred;
+.consult_h2 > h2{
+    color: white;
     position: relative;
     margin-top: 30px;
     font-size: 30px;
 }
 
 #consult_btn {
-    background-color: white;
-    color: black;
+    appearance: none;
+    background-color: #4B0082;
+    color: white;
     position: relative;
     margin-top: 50px;
+    font-size: 17px;
+    border-color: white;
+    border-width: 1px;
+    padding: 10px 20px 10px 20px;
 }
+
+.video_waves {
+    position: absolute;
+    /* height: 400px; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    /* display: none; */
+    
+    /* background-image: linear-gradient(#4B0082 15%,rgb(33,37,41)); */
+    /* background-size: 100% 125%; */
+    /* background-attachment: fixed; */
+}
+
+.video_waves svg {
+    position: relative;
+    display: block;
+    width: calc(147% + 1.3px);
+    height: 153px;
+}
+
+.video_waves .shape-fill {
+    fill: #212529;
+}
+
+.drip {
+    position: absolute;
+    transform: translateY(-8.2vw);
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.laser-beam {
+    display: none;
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0), rgb(255, 243, 5));
+    animation: laser-beam-animation 3s ease-in-out infinite;
+  }
+  
+  @keyframes laser-beam-animation {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
 /* ----------------------------------------------------------------------------------------------- */
 
-.home_serv_intro {
-    display: block;
+.waves1 {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
     width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg) translateY(22.2vw);
+    display: none;
+    
+    /* background-image: linear-gradient(#4B0082 15%,rgb(33,37,41)); */
+    /* background-size: 100% 125%; */
+    /* background-attachment: fixed; */
+}
+
+.waves1 svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 253px;
+}
+
+.waves1 .shape-fill {
+    fill: #212529;
+}
+
+.between_waves_1_2 {
+    height: 135vw;
+    background-image: linear-gradient(rgb(33,37,41) 15%, #4B0082);
+}
+
+.home_serv_img1_div {
+    padding-top: 100px;
+    background-color: transparent;
+    height: auto;
+    width: 100%;
+}
+
+.home_serv_img_left {
+    /* margin-left: 10px; */
+    height: 40vw;
+    aspect-ratio: 1 / 1;
+    image-rendering: optimizeQuality;
+    object-fit: cover;
+    /* transform: translateX(-10vw); */
+    border-radius: 0 50% 50% 0;
+    box-shadow: 0px 0px 3vmax 0vmax palevioletred;
+    /* clip-path: inset( 0vmax 0vmax 0vmax 0vmax); */
+}
+
+.home_serv_text_right {
+    position: absolute;
     color: white;
+    margin-top: 17vw;
+    margin-left: 55vw;
+    right: 10vw;
+    display: inline-block;
     text-align: center;
-    font-family: 'Roboto';
-    margin-top: 50px;
+}
+
+.home_serv_text_right > span{
+    font-size: 20px;
+}
+
+.home_serv_img2_div {
+    background-color: transparent;
+    height: auto;
+    width: 100%;
+    text-align: right;
+}
+
+.home_serv_img_right {
+    /* margin-right: 10px; */
+    height: 40vw;
+    aspect-ratio: 1 / 1;
+    image-rendering: optimizeQuality;
+    object-fit: cover;
+    border-radius: 50% 0 0 50%;
+    box-shadow: 0vmax 0px 3vmax 0vmax palevioletred;
+    /* clip-path: inset( 0vmax 0vmax 0vmax -100vmax); */
+}
+
+.home_serv_text_left {
+    height: auto;
+    width: auto;
+    position: absolute;
+    color: white;
+    left: 10vw;
+    margin-top: 17vw;
+    margin-right: 55vw;
+    display: inline-block;
+    text-align: center;
+}
+
+.home_serv_text_left > span {
+    font-size: 20px;
+}
+
+.home_serv_img3_div {
+    background-color: transparent;
+    height: auto;
+    width: 100%;
+}
+
+.waves2 {
+    /* position: absolute; */
+    /* height: 800px; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    /* transform: rotate(180deg); */
+
+    /* background-image: linear-gradient(#4B0082 15%,rgb(33,37,41)); */
+}
+
+.waves2 svg {
+    position: relative;
+    display: block;
+    width: calc(224% + 1.3px);
+    height: 242px;
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.waves2 .shape-fill {
+    fill: #4B0082;
 }
 
 /* Grid that holds cards that consist of images and buttons that should be directly below video */
@@ -74,20 +260,23 @@ video {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0px;
+    display: none;
 }
 
 .home_img_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
+/* 
 .home_card_img {
-    height: 100%;
+    height: 500px;
     width: 100%;
-    /* aspect-ratio: 1 / 1; */
+    aspect-ratio: 1 / 1;
     image-rendering: optimizeQuality;
     object-fit: cover;
-}
+    transform: translateX(-10vw);
+    border-radius: 0 50% 50% 0;
+} */
 
 #home_img_grid_override .card {
     color: white;
@@ -104,11 +293,7 @@ video {
     text-align: center;
     justify-content: center;
     z-index: 0;
-}
-
-.home_card_txt2 {
-    z-index: 1;
-    position: absolute;
+    /* display: none; */
 }
 
 #home_img_grid_override .card-btn {
@@ -120,85 +305,6 @@ video {
     margin-right: auto;
     width: 200px;
 }
-
-.home_serv_intro {
-    display: none;
-}
-
-.slider {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 90%;
-    /* text-align: center; */
-    overflow: hidden;
-    display: none;
-}
-
-.slides {
-    display: flex;
-
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-
-    border-radius: 10%;
-    /* padding-top: 10px; */
-    /* padding-bottom: 10px; */
-
-    /* height: 100%; */
-}
-
-/* #slide {
-    width: 100%;
-    height: 100%;
-    background: transparent
-} */
-
-.slider_img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slides::-webkit-scrollbar {
-    display: block;
-    width: 10px;
-    height: 10px;
-}
-
-.slides::-webkit-scrollbar-thumb {
-    background: white;
-    border-radius: 10px;
-}
-
-.slides::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.slides::-webkit-scrollbar-corner {
-    background: transparent;
-}
-
-.slides > div {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 100%;
-
-    background: #eee;
-    /* transform-origin: center center; */
-    transform: scale(1);
-    transition: transform 0.5s;
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-}
 /* ----------------------------------------------------------------------------------------------- */
 
 .after_grid_img {
@@ -206,12 +312,13 @@ video {
     aspect-ratio: 2 / 1;
     width: 100%;
     image-rendering: optimizeQuality;
+    display: none;
 }
 
 /* mission statement and button that should be below the standalone image after the image grid */
 /* ----------------------------------------------------------------------------------------------- */
 .home_mission_div {
-    color: white;
+    color: black;
     /* background-color: rgb(33,37,41); */
     /* background: transparent; */
     justify-content: center;
@@ -228,8 +335,12 @@ video {
 }
 
 #home_mission_btn {
+    appearance: none;
+    /* background-color: #4B0082; */
+    /* color: white; */
     background-color: white;
-    color: black;
+    color: #4B0082;
+    border-color: #4B0082;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -253,7 +364,7 @@ video {
 }
 
 #review_grid_override .card {
-    color: white;
+    color: black;
     /* background-color: rgb(33,37,41); */
     background: transparent;
     padding: 0;
@@ -282,14 +393,210 @@ video {
 }
 /* ----------------------------------------------------------------------------------------------- */
 
-.instagram_feed {
+/* Waves with instagram header and feed below*/
+/* ----------------------------------------------------------------------------------------------- */
+.waves3 {
+    /* position: absolute; */
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    /* background-image: linear-gradient(#4B0082 15%,rgb(33,37,41)); */
+}
+
+.waves3 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 116px;
+}
+
+.waves3 .shape-fill {
+    fill: #212529;
+}
+
+.instagram_header_div {
+    height: 200px;
+    background-color: rgb(33,37,41);
+}
+
+.instagram_header {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 3rem 0 0 0;
+    background-color: rgb(33,37,41);
+}
+
+.instagram_profile_pic_wrapper {
+    /* display: flex; */
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
+    /* color: white; */
+    background-image: linear-gradient(40deg, rgb(249, 155, 74) 15%, rgb(221, 48, 113) 50%, rgb(199, 46, 141) 85%);
+}
+
+.instagram_profile_pic {
+    height: 100px;
+    width: 100px;
+    margin: .17rem auto auto auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    background-color: #212529;
+}
+
+.instagram_profile_pic > img{
     height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.instagram_profile_info{
+    margin-left: 1rem;
+}
+
+.instagram_profile_info > h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.counts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.count {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vw;
+    font-size: 1.1vw;
+}
+
+.count span {
+    font-weight: bold;
+}
+
+#instagram_follow_btn {
+    appearance: none;
+    margin-left: 3vw;
+    /* margin-right: 1rem; */
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background-color:#4B0082;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.instagram_feed {
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    /* height: 140vh; */
+    background-image: linear-gradient(rgb(33,37,41) , #4B0082 );
+    background-size: 100% 185%;
+    background-position: fixed;
+    /* box-shadow: 0px 0px 0vmax 1vmax #3b0165; */
+    /* clip-path: inset( 0vmax 0vmax -1vmax 0vmax); */
+    /* transform: translateY(.1vw); */
 }
 
 /* ----------------------------------------------------------------------------------------------- */
 @media (max-width: 991px) {
-    .consult_h1{
+    .consult_h1 > h1{
         font-size: 80px;
+    }
+
+    .video_waves {
+        transform: rotate(180deg) translateY(-0.1vw);
+    }
+
+    .video_waves svg {
+        height: 113px;
+    }
+
+    .between_waves_1_2 {
+        height: 145vw;
+    }
+
+    .waves2 {
+        transform: translateY(-0.1vw);
+    }
+
+    .waves2 svg {
+        height: 113px;
+    }
+
+    .waves3 {
+        transform: rotate(180deg) translateY(-0.2vw);
+    }
+
+    .waves3 svg {
+        height: 83px;
+    }
+
+    .instagram_profile_pic_wrapper {
+        height: 85px;
+        width: 85px;
+    }
+
+    .instagram_profile_pic {
+        height: 80px;
+        width: 80px;
+    }
+
+    .instagram_profile_info{
+        margin-left: 1rem;
+    }
+    
+    .instagram_profile_info > h1 {
+        margin: 0;
+        font-size: 2vw;
+    }
+    
+    .counts {
+        margin-top: 0.5rem;
+    }
+    
+    .count {
+        margin-right: 2vw;
+        font-size: 1.7vw;
+    }
+    
+    .count span {
+        font-weight: bold;
+    }
+    
+    #instagram_follow_btn {
+        appearance: none;
+        margin-left: 3vw;
+        /* margin-right: 1rem; */
+        margin-top: 0.5rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid white;
+        border-radius: 0.5rem;
+        background-color:#4B0082;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .instagram_feed {
+        transform: translateY(.1px);
     }
 
     /* #home_img_grid_override .card {
@@ -299,12 +606,35 @@ video {
 }
 /* ----------------------------------------------------------------------------------------------- */
 @media (max-width: 770px) {
-    .consult_h1{
+    .consult_h1 > h1{
         font-size: 70px;
+        margin-top: -45px;
     }
     
-    .consult_h2 {
+    .consult_h2 > h2{
         font-size: 25px;
+    }
+
+    .home_serv_img1_div {
+        padding-top: 50px;
+    }
+
+    .home_serv_text_right {
+        width: 40%;
+        margin-top: 14vw;
+    }
+
+    .home_serv_text_right > span{
+        font-size: 15px;
+    }
+
+    .home_serv_text_left {
+        width: 40%;
+        margin-top: 14vw;
+    }
+
+    .home_serv_text_left > span{
+        font-size: 15px;
     }
 
     .review_grid {
@@ -335,37 +665,45 @@ video {
 }
 /* ----------------------------------------------------------------------------------------------- */
 @media (max-width: 600px) {
-    .consult_h1{
+    .consult_h1 > h1{
         font-size: 50px;
-        margin-top: 25px;
+        margin-top: -45px;
     }
 
-    .consult_h2 {
+    .consult_h2 > h2{
         font-size: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     #consult_btn {
-        font-size: 15px;
-        margin-top: 25px;
+        font-size: 13px;
+        margin-top: 15px;
     }
 
 }
 /* ----------------------------------------------------------------------------------------------- */
 @media (max-width: 500px) {
-    .consult_h1{
+    .consult_h1 > h1{
         font-size: 40px;
         margin-top: 20px;
     }
 
-    .consult_h2 {
+    .consult_h2 > h2{
         font-size: 15px;
         white-space: nowrap;
     }
 
     #consult_btn {
-        font-size: 13px;
+        font-size: 11px;
         width: 130px;
+    }
+
+    .home_serv_text_right {
+        margin-top: 12vw;
+    }
+
+    .home_serv_text_left {
+        margin-top: 12vw;
     }
 
     #home_img_grid_override .card {
@@ -374,12 +712,12 @@ video {
 }
 /* ----------------------------------------------------------------------------------------------- */
 @media (max-width: 350px) {
-    .consult_h1{
+    .consult_h1 > h1{
         font-size: 30px;
         margin-top: 15px;
     }
 
-    .consult_h2 {
+    .consult_h2 > h2{
         font-size: 13px;
         white-space: nowrap;
         margin-top: 15px;

@@ -9,6 +9,8 @@ body {
   background-image: linear-gradient(rgb(33,37,41) 15%, #4B0082);
   background-size: 100% 125%;
   background-attachment: fixed;
+
+  /* background-color: rgba(255, 0, 0, 0.435) !important; */
 }
 ::-webkit-scrollbar {
   display: none;

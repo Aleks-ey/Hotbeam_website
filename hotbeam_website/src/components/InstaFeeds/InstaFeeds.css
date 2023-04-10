@@ -1,9 +1,15 @@
+#feed_override .carousel-control-next-icon, .carousel-control-prev-icon {
+    opacity: 0;
+    filter:alpha(opacity=0); /* IE support */
+}
+
 #feed_override .insta_col {
+    height: auto;
     width: 100%;
-    aspect-ratio: 4/5;
-    /* padding: 10px; */
+    aspect-ratio: 9/8;
     box-sizing: border-box;
-    padding: 2px;
+    padding: 0px;
+    margin-bottom: 0px;
     
 }
 
@@ -12,19 +18,15 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 20px;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-bottom: 0px;
 }
 
 #feed_override img {
     height: 100%;
     object-fit: cover;
-    border-radius: 5%;
 }
 
 #feed_override video {
     height: 100%;
     object-fit: cover;
-    border-radius: 5%;
 }
