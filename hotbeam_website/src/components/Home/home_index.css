@@ -3,6 +3,15 @@
 
 /* possible colors: #4B0082 #DB3EB1   #4D4DFF   #0001db   #e889fb   #o9d4da   d30000   #295e62 */
 
+@keyframes backgroundpan {
+    from {
+        background-position: 0% center;
+    }   
+    to {
+        background-position: -200% center;
+    }
+}
+
 .home {
     background-color: white;
 }
@@ -95,13 +104,13 @@ video {
     fill: #212529;
 }
 
-.drip {
+/* .drip {
     position: absolute;
     transform: translateY(-8.2vw);
     width: 100%;
     z-index: 1;
     display: none;
-}
+} */
 
 .laser-beam {
     display: none;
@@ -123,19 +132,19 @@ video {
   
 /* ----------------------------------------------------------------------------------------------- */
 
-.waves1 {
-    /* position: absolute; */
+/* .waves1 {
+    display: none;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg) translateY(22.2vw);
-    display: none;
     
-    /* background-image: linear-gradient(#4B0082 15%,rgb(33,37,41)); */
-    /* background-size: 100% 125%; */
-    /* background-attachment: fixed; */
+    background-image: linear-gradient(#4B0082 15%,rgb(33,37,41));
+    background-size: 100% 125%;
+    background-attachment: fixed;
 }
 
 .waves1 svg {
@@ -147,10 +156,10 @@ video {
 
 .waves1 .shape-fill {
     fill: #212529;
-}
+} */
 
 .between_waves_1_2 {
-    height: 135vw;
+    height: 140vw;
     background-image: linear-gradient(rgb(33,37,41) 15%, #4B0082);
 }
 
@@ -185,6 +194,12 @@ video {
 
 .home_serv_text_right > span{
     font-size: 20px;
+
+    /* animation: backgroundpan 4s linear infinite;
+    background: linear-gradient(to right, purple, violet, black, purple);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%; */
 }
 
 .home_serv_img2_div {
@@ -251,6 +266,10 @@ video {
 
 .waves2 .shape-fill {
     fill: #4B0082;
+}
+
+.home_mobile_txt_div {
+    visibility: hidden;
 }
 
 /* Grid that holds cards that consist of images and buttons that should be directly below video */
@@ -557,13 +576,8 @@ video {
         height: 80px;
         width: 80px;
     }
-
-    .instagram_profile_info{
-        margin-left: 1rem;
-    }
     
     .instagram_profile_info > h1 {
-        margin: 0;
         font-size: 2vw;
     }
     
@@ -576,23 +590,11 @@ video {
         font-size: 1.7vw;
     }
     
-    .count span {
-        font-weight: bold;
-    }
-    
     #instagram_follow_btn {
-        appearance: none;
         margin-left: 3vw;
-        /* margin-right: 1rem; */
         margin-top: 0.5rem;
         padding: 0.5rem 1rem;
-        border: 1px solid white;
-        border-radius: 0.5rem;
-        background-color:#4B0082;
-        color: white;
         font-size: 1rem;
-        font-weight: bold;
-        cursor: pointer;
     }
 
     .instagram_feed {
@@ -636,6 +638,10 @@ video {
     .home_serv_text_left > span{
         font-size: 15px;
     }
+    
+    .container_review_grid{
+        padding-bottom: 0;
+    }
 
     .review_grid {
         display: -ms-grid;
@@ -664,6 +670,30 @@ video {
     }
 }
 /* ----------------------------------------------------------------------------------------------- */
+@media (max-width: 670px) {
+    .instagram_header_div {
+        height: 160px;
+    }
+
+    .instagram_profile_pic_wrapper {
+        height: 75px;
+        width: 75px;
+    }
+
+    .instagram_profile_pic {
+        height: 70px;
+        width: 70px;
+    }
+    
+    .instagram_profile_info > h1 {
+        font-size: 2.5vw;
+    }
+    
+    .count {
+        font-size: 2vw;
+    }
+}
+/* ----------------------------------------------------------------------------------------------- */
 @media (max-width: 600px) {
     .consult_h1 > h1{
         font-size: 50px;
@@ -680,6 +710,10 @@ video {
         margin-top: 15px;
     }
 
+    #instagram_follow_btn {
+        margin-left: 3vw;
+        font-size: .8rem;
+    }
 }
 /* ----------------------------------------------------------------------------------------------- */
 @media (max-width: 500px) {
@@ -698,16 +732,156 @@ video {
         width: 130px;
     }
 
-    .home_serv_text_right {
-        margin-top: 12vw;
+    .video_waves svg {
+        height: 43px;
     }
 
+    .waves2 svg {
+        height: 43px;
+    }
+
+    .waves3 svg {
+        height: 43px;
+    }
+
+    .between_waves_1_2 {
+        height: 550vw;
+    }
+
+    .home_serv_img1_div {
+        /* padding-top: 225px; */
+        height: auto;
+        width: 100%;
+    }
+    
+    .home_serv_img_left {
+        height: 80vw;
+        border-radius: 0 50% 50% 0;
+        /* transform: translateX(-10vw); */
+        margin-top: 20px;
+    }
+    
+    .home_serv_text_right {
+        display: none;
+        /* width: 70%;
+        margin: 0vw;
+        right: 0vw;
+        transform: translate(-16vw, -33vw); */
+    }
+    
+    .home_serv_text_right > span{
+        font-size: 20px;
+    }
+    
+    .home_serv_img2_div {
+        /* padding-top: 225px; */
+        text-align: left;
+        height: auto;
+        width: 100%;
+    }
+    
+    .home_serv_img_right {
+        /* height: 80vw;
+        border-radius: 50% 0 0 50%; */
+
+        margin-top: 20px;
+        float: left;
+        height: 80vw;
+        aspect-ratio: 1 / 1;
+        image-rendering: optimizeQuality;
+        object-fit: cover;
+        /* transform: translateX(-10vw); */
+        border-radius: 0 50% 50% 0;
+        box-shadow: 0px 0px 3vmax 0vmax palevioletred;
+    }
+    
     .home_serv_text_left {
-        margin-top: 12vw;
+        display: none;
+        /* width: 70%;
+        left: 0vw;
+        margin: 0vw;
+        transform: translate(15vw, -34vw); */
+    }
+    
+    .home_serv_text_left > span {
+        font-size: 20px;
+    }
+    
+    .home_serv_img3_div {
+        /* padding-top: 255px; */
+        height: auto;
+        width: 100%;
+    }
+
+    .home_mobile_txt_div {
+        visibility: visible;
+        display: flex;
+        margin-top: 20px;
+        float: right;
+        height: 80vw;
+        
+        background-color: white;
+        /* background-color: #4B0082; */
+        /* background-color: #212529; */
+        border-radius: 50% 0% 0% 50%;
+        aspect-ratio: 1 / 1;
+        image-rendering: optimizeQuality;
+        object-fit: cover;
+        box-shadow: 0vmax 0px 3vmax 0vmax palevioletred;
+        align-items: center;
+    }
+
+    .home_mobile_txt_div > span {
+        /* color: white; */
+        float: left;
+        position: absolute;
+        /* margin-top: 29%; */
+        /* margin-bottom: auto; */
+        margin-left: 70px;
+        text-align: center;
+
+        animation: backgroundpan 4s linear infinite;
+        background: linear-gradient(to right, purple, violet, black, purple);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200%;
+        /* white-space: nowrap; */
+    }
+
+    @keyframes backgroundpan {
+        from {
+            background-position: 0% center;
+        }   
+        to {
+            background-position: -200% center;
+        }
     }
 
     #home_img_grid_override .card {
         height: 201px;
+    }
+
+    .instagram_profile_pic_wrapper {
+        height: 65px;
+        width: 65px;
+    }
+
+    .instagram_profile_pic {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .instagram_profile_info > h1 {
+        font-size: 3.2vw;
+    }
+    
+    .count {
+        font-size: 2.7vw;
+    }
+
+    #instagram_follow_btn {
+        margin-left: 3vw;
+        font-size: .7rem;
     }
 }
 /* ----------------------------------------------------------------------------------------------- */
@@ -727,5 +901,7 @@ video {
         font-size: 11px;
         margin-top: 20px;
         width: 115px;
+        padding-left: 2px;
+        padding-right: 2px;
     }
 }
