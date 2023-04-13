@@ -12,7 +12,7 @@ import img3 from '../../assets/serv_img_3v2.jpeg'
 import img4 from '../../assets/serv_img_4.jpeg'
 import img5 from '../../assets/serv_img_5.jpeg'
 import img6 from '../../assets/serv_img_6.jpeg'
-import drip from '../../assets/drip.png'
+// import drip from '../../assets/drip.png'
 import after_grid_banner from '../../assets/IMG_1529.jpeg'
 import Logo from '../../assets/hb_logo.png';
 
