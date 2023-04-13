@@ -149,7 +149,9 @@ const Home = () => {
                 <span>Already have the music covered? Take your event to the next level with our lighting solutions </span>
             </div>
         </div>
-        <Button type="button" className="home_serv_btn" id="home_serv_btn" href="/services">See More</Button>
+        <div className='home_serv_btn_div'>
+            <Button type="button" className="home_serv_btn" id="home_serv_btn" href="/services">See More</Button>
+        </div>
     </div>
     <div className="waves2">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

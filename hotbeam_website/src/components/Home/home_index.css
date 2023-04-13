@@ -876,18 +876,22 @@ video {
         }
     }
 
+    .home_serv_btn_div {
+        display: flex;
+        height: 70vw;
+        align-items: center;
+        justify-content: center;
+    }
+
     #home_serv_btn {
         visibility: visible;
         appearance: none;
         background-color: #4B0082;
         color: white;
-        margin-top: 30vw;
-        margin-left: 40vw;
-        margin-right: 33vw;
-        font-size: 14.5px;
+        font-size: 17px;
         border-color: white;
         border-width: 1px;
-        padding: 8px 14.5px 8px 14.5px;
+        padding: 10px 20px 10px 20px;
     }
 
     .waves2 svg {
