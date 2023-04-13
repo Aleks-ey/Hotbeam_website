@@ -30,3 +30,23 @@
     height: 100%;
     object-fit: cover;
 }
+
+@media screen and (max-width: 500px) {
+    #feed_override .insta_col {
+        height: auto;
+        width: 100%;
+        aspect-ratio: 9/8;
+        box-sizing: border-box;
+        padding: 0px;
+        margin-bottom: 0px;
+        
+    }
+    
+    #feed_override .insta_row {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0px;
+    }
+}

@@ -122,6 +122,9 @@ const Home = () => {
         <div className="home_serv_img1_div">
             <div className='home_mobile_txt_div'>
                 <span>Let our beats move your feet! DJ services for any occasions </span>
+                {/* <span>Let our </span>
+                <span className='txt_grad'>beats</span>
+                <span>move your feet! DJ services for any occasions </span> */}
             </div>
             <img className='home_serv_img_left' src={img6} alt="" />
             <div className='home_serv_text_right'>
@@ -130,10 +133,10 @@ const Home = () => {
         </div>
         <div className="home_serv_img2_div">
             <div className='home_mobile_txt_div'>
-                <span>Let our beats move your feet! DJ services for any occasions </span>
+                <span>Need something a little more flashy? We can combine our DJ performance with a stunning laser light show</span>
             </div>
             <div className='home_serv_text_left'>
-                <span>Let our beats move your feet! DJ services for any occasions </span>
+                <span>Need something a little more flashy? We can combine our DJ performance with a stunning laser light show</span>
             </div>
             <img className='home_serv_img_right' src={img5} alt="" />
         </div>
@@ -146,6 +149,7 @@ const Home = () => {
                 <span>Already have the music covered? Take your event to the next level with our lighting solutions </span>
             </div>
         </div>
+        <Button type="button" className="home_serv_btn" id="home_serv_btn" href="/services">See More</Button>
     </div>
     <div className="waves2">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -155,16 +159,16 @@ const Home = () => {
         </svg>
     </div>
 
-    <div className="container_img_grid_home" id="home_img_grid_override">
+    {/* <div className="container_img_grid_home" id="home_img_grid_override">
         <div className="home_img_grid">
             <div className="card home_img_card">
-                <img src={img4} alt="" className="home_card_img" />
+                <img src={img4} alt="" className="home_card_img" /> */}
                 {/* <div className="home_card_txt2">
                     <h2>School Dances</h2>
                     <h2> & Proms</h2>
                     <Button type="button" className="card-btn" href="/services">Learn More</Button>
                 </div> */}
-            </div>
+            {/* </div>
             <div className="card home_card_txt">
                 <h2>School Dances</h2>
                 <h2> & Proms</h2>
@@ -172,9 +176,9 @@ const Home = () => {
             </div>
             <div className="card home_img_card">
                 <img src={img2} alt="" className="home_card_img" />
-            </div>
+            </div> */}
             {/* ------------------------------ */}
-            <div className="card home_card_txt">
+            {/* <div className="card home_card_txt">
                 <h2>Weddings</h2>
                 <Button type="button" className="card-btn" href="/services">Learn More</Button>
             </div>
@@ -187,7 +191,7 @@ const Home = () => {
                 <Button type="button" className="card-btn" href="/services">Learn More</Button>
             </div>
         </div>
-    </div>
+    </div> */}
     {/* ----------------------------------------------------------------------------------------------- */}
 
     <div className="after_grid_img_div">
@@ -205,7 +209,7 @@ const Home = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
-        <Button type="button" className="card-btn" id="home_mission_btn" href="/services">Read More</Button>
+        <Button type="button" className="card-btn" id="home_mission_btn" href="/mission">Read More</Button>
     </div>
     {/* ----------------------------------------------------------------------------------------------- */}
 
