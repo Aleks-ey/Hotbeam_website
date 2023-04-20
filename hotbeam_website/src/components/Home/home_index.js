@@ -121,19 +121,21 @@ const Home = () => {
     <div className="between_waves_1_2">
         <div className="home_serv_img1_div">
             <div className='home_mobile_txt_div'>
-                <span>Let our beats move your feet! DJ services for any occasions </span>
+                <span>Let our beats move your feet!</span>
+                <span>DJ services for any occasion</span>
                 {/* <span>Let our </span>
                 <span className='txt_grad'>beats</span>
                 <span>move your feet! DJ services for any occasions </span> */}
             </div>
             <img className='home_serv_img_left' src={img6} alt="" />
             <div className='home_serv_text_right'>
-                <span>Let our beats move your feet! DJ services for any occasions </span>
+                <span>Let our beats move your feet! DJ services for any occasion</span>
             </div>
         </div>
         <div className="home_serv_img2_div">
             <div className='home_mobile_txt_div'>
-                <span>Need something a little more flashy? We can combine our DJ performance with a stunning laser light show</span>
+                <span>Need something a little more flashy?</span>
+                <span>We can combine our DJ performance with a stunning laser light show</span>
             </div>
             <div className='home_serv_text_left'>
                 <span>Need something a little more flashy? We can combine our DJ performance with a stunning laser light show</span>
@@ -142,7 +144,8 @@ const Home = () => {
         </div>
         <div className="home_serv_img3_div">
             <div className='home_mobile_txt_div'>
-                <span>Already have the music covered? Take your event to the next level with our lighting solutions </span>
+                <span>Already have the music covered?</span>
+                <span>Take your event to the next level with our lighting solutions </span>
             </div>
             <img className='home_serv_img_left' src={img4} alt="" />
             <div className='home_serv_text_right'>
