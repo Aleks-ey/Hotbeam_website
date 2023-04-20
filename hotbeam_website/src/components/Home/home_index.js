@@ -64,7 +64,7 @@ const Home = () => {
     {/* check if user is on safari, if so, display a gif, otherwise display video */}
     {isSafari() ? (
         <div className='home_gif_div'>
-            <img src={gif} alt="" className="gif" />
+            <img src={gif} alt="Close up of DJ board being used" className="gif" />
             <div className="consult">
                 <div className="consult_h1"><h1>Keep On Dancing</h1></div>
                 <div className="consult_h2"><h2>Set the stage with our DJ and lighting solutions</h2></div>
@@ -80,7 +80,7 @@ const Home = () => {
         </div>
     ) : (
         <div align="center" className="embeded-responsive home_video_div">
-            <video autoPlay muted loop playsInline width="100%" height="" background-color='white'>
+            <video autoPlay muted loop playsInline width="100%" height="" background-color='white' alt="Close up of DJ board being used">
                 <source src={movie} type="video/mp4"/>
             </video>
             <div className="consult">
@@ -127,7 +127,7 @@ const Home = () => {
                 <span className='txt_grad'>beats</span>
                 <span>move your feet! DJ services for any occasions </span> */}
             </div>
-            <img className='home_serv_img_left' src={img6} alt="" />
+            <img className='home_serv_img_left' src={img6} alt="People partying in a club" />
             <div className='home_serv_text_right'>
                 <span>Let our beats move your feet! DJ services for any occasion</span>
             </div>
@@ -140,14 +140,14 @@ const Home = () => {
             <div className='home_serv_text_left'>
                 <span>Need something a little more flashy? We can combine our DJ performance with a stunning laser light show</span>
             </div>
-            <img className='home_serv_img_right' src={img5} alt="" />
+            <img className='home_serv_img_right' src={img5} alt="School event with DJ and lighting service" />
         </div>
         <div className="home_serv_img3_div">
             <div className='home_mobile_txt_div'>
                 <span>Already have the music covered?</span>
                 <span>Take your event to the next level with our lighting solutions </span>
             </div>
-            <img className='home_serv_img_left' src={img4} alt="" />
+            <img className='home_serv_img_left' src={img4} alt="Showcase of lighting service with multiple laser lights" />
             <div className='home_serv_text_right'>
                 <span>Already have the music covered? Take your event to the next level with our lighting solutions </span>
             </div>
