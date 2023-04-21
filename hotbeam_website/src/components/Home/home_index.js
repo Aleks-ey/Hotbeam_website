@@ -274,7 +274,7 @@ const Home = () => {
                     <div className="count"><span>21</span> following</div>
                 </div>
             </div>
-            <Button type="button" id="instagram_follow_btn" href="/services">Follow</Button>
+            <Button type="button" id="instagram_follow_btn" href="https://www.instagram.com/hotbeamproductions/">Follow</Button>
         </div>
     </div>
 
