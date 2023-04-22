@@ -108,7 +108,7 @@ video {
     position: absolute;
     transform: translateY(-8.2vw);
     width: 100%;
-    z-index: 1;
+    z-index: 100;
     display: none;
 } */
 
@@ -159,7 +159,7 @@ video {
 } */
 
 .between_waves_1_2 {
-    height: 145vw;
+    height: 155vw;
     background-image: linear-gradient(rgb(33,37,41) 15%, #4B0082);
 }
 
@@ -242,8 +242,22 @@ video {
     width: 100%;
 }
 
+.home_serv_btn_div {
+    display: flex;
+    height: 20vw;
+    align-items: center;
+    justify-content: center;
+}
+
 #home_serv_btn {
-    visibility: hidden;
+    visibility: visible;
+    appearance: none;
+    background-color: #4B0082;
+    color: white;
+    font-size: 17px;
+    border-color: white;
+    border-width: 1px;
+    padding: 10px 20px 10px 20px;
 }
 
 .waves2 {
@@ -410,6 +424,24 @@ video {
     padding-right: 50px;
     margin-bottom: 40px;
 }
+
+.review_btn_div {
+    display: flex;
+    justify-content: center;
+}
+
+#home_review_btn {
+    appearance: none;
+    /* background-color: #4B0082; */
+    /* color: white; */
+    background-color: white;
+    color: #4B0082;
+    border-color: #4B0082;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
 /* ----------------------------------------------------------------------------------------------- */
 
 /* Waves with instagram header and feed below*/
@@ -547,9 +579,9 @@ video {
         height: 113px;
     }
 
-    .between_waves_1_2 {
+    /* .between_waves_1_2 {
         height: 150vw;
-    }
+    } */
 
     .waves2 {
         transform: translateY(-0.1vw);
@@ -621,9 +653,9 @@ video {
         font-size: 25px;
     }
 
-    .between_waves_1_2 {
+    /* .between_waves_1_2 {
         height: 150vw;
-    }
+    } */
 
     .home_serv_img1_div {
         padding-top: 50px;
@@ -724,6 +756,10 @@ video {
     #consult_btn {
         font-size: 13px;
         margin-top: 15px;
+    }
+
+    .between_waves_1_2 {
+        height: 170vw;
     }
 
     #instagram_follow_btn {

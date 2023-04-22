@@ -1,6 +1,6 @@
 import './footer_index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => (
@@ -11,9 +11,9 @@ const Footer = () => (
                 <a target="https://www.facebook.com/hotbeamproductions" rel='noreferrer' href='https://www.facebook.com/hotbeamproductions' className="footer-a">
                     <FontAwesomeIcon icon={faFacebook} />
                 </a>
-                <a target="_blank" rel='noreferrer' href='_blank' className="footer-a">
+                {/* <a target="_blank" rel='noreferrer' href='_blank' className="footer-a">
                     <FontAwesomeIcon icon={faTwitter} />
-                </a>
+                </a> */}
                 <a target="https://www.instagram.com/hotbeamproductions/" rel='noreferrer' href='https://www.instagram.com/hotbeamproductions/' className="footer-a">
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>

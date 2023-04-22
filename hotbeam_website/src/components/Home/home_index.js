@@ -153,7 +153,7 @@ const Home = () => {
             </div>
         </div>
         <div className='home_serv_btn_div'>
-            <Button type="button" className="home_serv_btn" id="home_serv_btn" href="/services">See More</Button>
+            <Button type="button" className="home_serv_btn" id="home_serv_btn" href="/contact">Request A Free Quote</Button>
         </div>
     </div>
     <div className="waves2">
@@ -214,7 +214,7 @@ const Home = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
-        <Button type="button" className="card-btn" id="home_mission_btn" href="/mission">Read More</Button>
+        <Button type="button" className="card-btn" id="home_mission_btn" href="/services">Read More</Button>
     </div>
     {/* ----------------------------------------------------------------------------------------------- */}
 
@@ -247,6 +247,9 @@ const Home = () => {
                     <h3>John Doe 2</h3>
                 </div>
             </div>
+        </div>
+        <div className='review_btn_div'>
+            <Button type="button" className="card-btn" id="home_review_btn" href="/contact">Contact Us</Button>
         </div>
     </div>
     {/* ----------------------------------------------------------------------------------------------- */}

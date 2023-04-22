@@ -33,9 +33,9 @@ function Topbar() {
             <Nav.Link as={Link} to="/meet" className="navLink">
               Meet the DJs
             </Nav.Link>
-            <Nav.Link as={Link} to="/mission" className="navLink">
+            {/* <Nav.Link as={Link} to="/mission" className="navLink">
               Our Mission
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link as={Link} to="/contact" className="navLink">
               Contact Us
             </Nav.Link>
