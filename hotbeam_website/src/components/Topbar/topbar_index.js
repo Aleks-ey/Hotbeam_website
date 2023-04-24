@@ -31,7 +31,7 @@ function Topbar() {
               Services
             </Nav.Link>
             <Nav.Link as={Link} to="/meet" className="navLink">
-              Meet the DJs
+              Meet the Owners
             </Nav.Link>
             {/* <Nav.Link as={Link} to="/mission" className="navLink">
               Our Mission

@@ -80,7 +80,7 @@ const Home = () => {
         </div>
     ) : (
         <div align="center" className="embeded-responsive home_video_div">
-            <video autoPlay muted loop playsInline width="100%" height="" background-color='white' alt="Close up of DJ board being used">
+            <video autoPlay muted loop playsInline width="100%" height="" background-color='white' alt="Close up of DJ board being used" poster='../../assets/HB_Intro_thumbnail.png'>
                 <source src={movie} type="video/mp4"/>
             </video>
             <div className="consult">
