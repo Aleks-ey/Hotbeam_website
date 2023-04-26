@@ -1,6 +1,6 @@
 import './meet_index.css'
-import Daniel from '../../assets/DanielHeadshot2.jpg'
-import Beau from '../../assets/BeauHeadshot2.jpg'
+import Daniel from '../../assets/DanielHeadshot.jpg'
+import Beau from '../../assets/BeauHeadshot.jpg'
 
 const MeetTheDJs = () => (
     <>
