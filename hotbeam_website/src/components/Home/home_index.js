@@ -67,7 +67,7 @@ const Home = () => {
             <img src={gif} alt="Close up of DJ board being used" className="gif" />
             <div className="consult">
                 <div className="consult_h1"><h1>Keep On Dancing</h1></div>
-                <div className="consult_h2"><h2>Set the stage with our DJ and lighting solutions</h2></div>
+                <div className="consult_h2"><h2>Where music meets the magic of lasers and lighting</h2></div>
                 <Button type="button" id="consult_btn" href='/contact'>Free Consultation</Button>
             </div>
             <div className="video_waves">
@@ -85,7 +85,7 @@ const Home = () => {
             </video>
             <div className="consult">
                 <div className="consult_h1"><h1>Keep On Dancing</h1></div>
-                <div className="consult_h2"><h2>Set the stage with our DJ and lighting solutions</h2></div>
+                <div className="consult_h2"><h2>Where music meets the magic of<br/>lasers and lighting</h2></div>
                 <Button type="button" id="consult_btn" href='/contact'>Free Consultation</Button>
             </div>
             <div className="video_waves">
@@ -121,35 +121,55 @@ const Home = () => {
     <div className="between_waves_1_2">
         <div className="home_serv_img1_div">
             <div className='home_mobile_txt_div'>
-                <span>Let our beats move your feet!</span>
-                <span>DJ services for any occasion</span>
+                <span>
+                    Get the party started with our top-notch DJ service. 
+                    <br/>
+                    Let our beats move your feet! DJ services for any occasion
+                </span>
                 {/* <span>Let our </span>
                 <span className='txt_grad'>beats</span>
                 <span>move your feet! DJ services for any occasions </span> */}
             </div>
             <img className='home_serv_img_left' src={img6} alt="People partying in a club" />
             <div className='home_serv_text_right'>
-                <span>Let our beats move your feet! DJ services for any occasion</span>
+                <span>
+                    Get the party started with our top-notch DJ service.
+                    Let our beats move your feet! DJ services for any occasion
+                </span>
             </div>
         </div>
         <div className="home_serv_img2_div">
             <div className='home_mobile_txt_div'>
-                <span>Need something a little more flashy?</span>
-                <span>We can combine our DJ performance with a stunning laser light show</span>
+                <span>
+                    Need something a little more flashy? 
+                    Transform your event into a mesmerizing experience with our stunning laser light shows 
+                    - guaranteed to leave a lasting impression
+                </span>
             </div>
             <div className='home_serv_text_left'>
-                <span>Need something a little more flashy? We can combine our DJ performance with a stunning laser light show</span>
+                <span>
+                    Need something a little more flashy? 
+                    Transform your event into a mesmerizing experience with our stunning laser light shows 
+                    - guaranteed to leave a lasting impression
+                </span>
             </div>
             <img className='home_serv_img_right' src={img5} alt="School event with DJ and lighting service" />
         </div>
         <div className="home_serv_img3_div">
             <div className='home_mobile_txt_div'>
-                <span>Already have the music covered?</span>
-                <span>Take your event to the next level with our lighting solutions </span>
+                <span>
+                    Already have the music covered? 
+                    Elevate your event to the next level with our professional lighting solutions - 
+                    designed to create the perfect ambiance and atmosphere for any occasion
+                </span>
             </div>
             <img className='home_serv_img_left' src={img4} alt="Showcase of lighting service with multiple laser lights" />
             <div className='home_serv_text_right'>
-                <span>Already have the music covered? Take your event to the next level with our lighting solutions </span>
+                <span>
+                    Already have the music covered? 
+                    Elevate your event to the next level with our professional lighting solutions - 
+                    designed to create the perfect ambiance and atmosphere for any occasion
+                </span>
             </div>
         </div>
         <div className='home_serv_btn_div'>
@@ -205,16 +225,20 @@ const Home = () => {
 
     {/* ------------ mission statement and button that should be below the standalone image after the image grid ------------ */}
     <div className="home_mission_div">
-        <h1>Keeping You Free While The</h1>
-        <h1>Dance Floor is Busy</h1>
+        <h1>Who We Are</h1>
         <div className="home_mission_paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            With Hot Beam Productions, elevate your event to new heights! 
+            Whether it's a dream wedding, corporate event, mitzvah, or any other special occasion, 
+            our knowledgeable team is committed to putting together a genuinely exceptional experience 
+            that exactly matches your vision. 
+            While our state-of-the-art lighting and laser shows provide the ideal ambiance, 
+            our expert DJs will keep the party going all night long. 
+            We have everything you need to elevate your event with our full range of 
+            professional services, which includes DJ, lighting & lasers, A/V, and 
+            much more. Allow us to assist you in planning an event that will be 
+            remembered for years to come.
         </div>
-        <Button type="button" className="card-btn" id="home_mission_btn" href="/services">Read More</Button>
+        <Button type="button" className="card-btn" id="home_mission_btn" href="/meet">Read More</Button>
     </div>
     {/* ----------------------------------------------------------------------------------------------- */}
 

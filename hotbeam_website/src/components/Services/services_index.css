@@ -11,8 +11,8 @@
 .intro_txt {
     color: white;
     position: relative;
-    font-size: xx-large;
     top: 40%;
+    font-size: xx-large;
 }
 
 .container_img_grid_serv {
@@ -59,6 +59,7 @@
 
 #serv_img_grid_override .card {
     /* background-color: rgb(33,37,41); */
+    height: 60vw;
     background: transparent;
     padding: 0px;
     margin: 0;
@@ -75,14 +76,22 @@
     object-fit: cover;
 }
 
+.text_card {
+    max-height: 45vw;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
 .serv_card_h{
     color: white;
 }
 
 .serv_card_span {
     color: white;
+    font-size: .8rem;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 10px;
 }
 
 .last-div {
@@ -115,13 +124,22 @@
     padding: 8px 14.5px 8px 14.5px;
 }
 
+.mobile-card {
+    display: none !important;
+}
+
 @media (max-width: 1015px) {
+    .intro {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .serv_card_h {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .serv_card_span {
-        font-size: 15px;
+        font-size: 0.7rem;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -146,8 +164,21 @@
         grid-template-columns: 1fr;
     }
 
+    .hide-on-mobile {
+        display: none !important;
+        position: absolute !important;
+    }
+
+    .mobile-card {
+        display: block !important;
+    }
+
+    .mobile_txt {
+        transform: translateY(-23vw);
+    }
+
     #serv_img_grid_override .card {
-        height: 401px;
+        height: 100vw;
         padding: 0;
         margin: 0;
         border-width: 0px;
@@ -156,36 +187,45 @@
         justify-content: center;
     }
 
+    .serv_card_img {
+        height: 45vw;
+        width: 100%;
+        image-rendering: optimizeQuality;
+        object-fit: cover;
+    }
+
     .serv_card_h {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .serv_card_span {
-        font-size: 20px;
+        font-size: 0.7rem;
     }
     
 }
 
 @media (max-width: 500px) {
     .intro_txt {
-        font-size: 30px;
-    }
-
-    #serv_img_grid_override .card {
-        height: 201px;
-        padding: 0;
-        margin: 0;
-        border-width: 0px;
-        border-radius: 0%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .serv_card_h{
         font-size: 20px;
     }
 
+    .mobile_txt {
+        transform: translateY(-35vw);
+    }
+
+    #serv_img_grid_override .card {
+        height: 200vw;
+    }
+
+    .serv_card_img {
+        height: 80vw;
+    }
+
+    .serv_card_h{
+        font-size: 19px;
+    }
+
     .serv_card_span{
-        font-size: 15px;
+        font-size: 0.8rem;
     }
 }
