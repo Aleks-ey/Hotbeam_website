@@ -34,24 +34,6 @@
     background: transparent;
 }
 
-/* @keyframes gradi {
-    0% {
-        background-position: 0% 0%;
-    }
-    25% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 0% 100%;
-    }
-    75% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-} */
-
 .serv_img_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -60,6 +42,23 @@
 #serv_img_grid_override .card {
     /* background-color: rgb(33,37,41); */
     height: 60vw;
+    background: transparent;
+    padding: 0px;
+    margin: 0;
+    border-width: 0px;
+    border-radius: 0%;
+    text-align: center;
+    justify-content: center;
+}
+
+#serv_img_grid_override .card > img {
+    height: 30vw;
+}
+
+.innerc {
+    display: flex;
+    flex-direction: column;
+    height: 30vw !important;
     background: transparent;
     padding: 0px;
     margin: 0;
@@ -164,6 +163,18 @@
         grid-template-columns: 1fr;
     }
 
+    #serv_img_grid_override .card {
+        height: 100vw;
+    }
+
+    #serv_img_grid_override .card > img {
+        height: 50vw;
+    }
+
+    .innerc {
+        height: 50vw !important;
+    }
+
     .hide-on-mobile {
         display: none !important;
         position: absolute !important;
@@ -171,10 +182,6 @@
 
     .mobile-card {
         display: block !important;
-    }
-
-    .mobile_txt {
-        transform: translateY(-23vw);
     }
 
     #serv_img_grid_override .card {
@@ -187,12 +194,12 @@
         justify-content: center;
     }
 
-    .serv_card_img {
+    /* .serv_card_img {
         height: 45vw;
         width: 100%;
         image-rendering: optimizeQuality;
         object-fit: cover;
-    }
+    } */
 
     .serv_card_h {
         font-size: 20px;
@@ -209,16 +216,16 @@
         font-size: 20px;
     }
 
-    .mobile_txt {
-        transform: translateY(-35vw);
-    }
-
     #serv_img_grid_override .card {
-        height: 200vw;
+        height: 160vw;
     }
 
-    .serv_card_img {
+    #serv_img_grid_override .card > img {
         height: 80vw;
+    }
+
+    .innerc {
+        height: 80vw !important;
     }
 
     .serv_card_h{

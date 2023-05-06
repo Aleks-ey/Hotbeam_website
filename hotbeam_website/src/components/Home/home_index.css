@@ -944,6 +944,12 @@ video {
         font-size: 6vw;
     }
 
+    .home_mission_paragraph {
+        padding-left: 22px;
+        padding-right: 22px;
+        margin-bottom: 40px;
+    }
+
     .waves3 {
         height: 150px;
     }

@@ -23,7 +23,7 @@ const Services = () => (
 
             <div className="card">
                 <img src={d1} alt="" className="serv_card_img" />
-                <div className="card">
+                <div className="innerc">
                     <h2 className='serv_card_h'>Weddings</h2>
                     <span className='serv_card_span'>
                         Make your special day unforgettable with our professional wedding DJ services. 
@@ -34,7 +34,7 @@ const Services = () => (
             </div>
 
             <div className="card hide-on-mobile">
-                <div className="card">
+                <div className="innerc">
                     <h2 className='serv_card_h'>
                         Corporate
                         <br/> 
@@ -56,7 +56,7 @@ const Services = () => (
             normal when all the cards are stacked up.*/}
             <div className="card mobile-card">
                 <img src={img2} alt="" className="serv_card_img" />
-                <div className="card mobile_txt">
+                <div className="innerc mobile_txt">
                     <h2 className='serv_card_h'>
                         Corporate
                         <br/> 
@@ -73,7 +73,7 @@ const Services = () => (
 
             <div className="card">
                 <img src={img3} alt="" className="serv_card_img" />
-                <div className="card">
+                <div className="innerc">
                     <h2 className='serv_card_h'>
                         School Dances
                         <br/> 
@@ -90,7 +90,7 @@ const Services = () => (
 
             <div className="card">
                 <img src={img4} alt="" className="serv_card_img" />
-                <div className="card">
+                <div className="innerc">
                     <h2 className='serv_card_h'>
                         Lighting
                         <br/> 
@@ -107,7 +107,7 @@ const Services = () => (
             </div>
 
             <div className="card hide-on-mobile">
-                <div className="card">
+                <div className="innerc">
                     <h2 className='serv_card_h'>
                         Private
                         <br/> 
@@ -130,7 +130,7 @@ const Services = () => (
             normal when all the cards are stacked up.*/}
             <div className="card mobile-card"> 
                 <img src={img5} alt="" className="serv_card_img" />
-                <div className="card mobile_txt">
+                <div className="innerc mobile_txt">
                     <h2 className='serv_card_h'>
                         Private
                         <br/> 
@@ -148,7 +148,7 @@ const Services = () => (
 
             <div className="card">
                 <img src={img6} alt="" className="serv_card_img" />
-                <div className="card">
+                <div className=" innerc">
                     <h2 className='serv_card_h'>Bar/Bat Mitzvahs</h2>
                     <span className='serv_card_span'>
                         Make your child's bar/bat mitzvah celebration an unforgettable event with our professional DJ services. 
